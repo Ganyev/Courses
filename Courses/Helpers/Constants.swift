@@ -10,7 +10,7 @@ import Foundation
 struct Constants {
     struct Network {
         struct EndPoint {
-            static let categories = "cities/"
+            static let categories = "categories"
         }
         
         struct ErrorMessage {
