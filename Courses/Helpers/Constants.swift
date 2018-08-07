@@ -11,6 +11,9 @@ struct Constants {
     struct Network {
         struct EndPoint {
             static let categories = "categories"
+            static func subcategories(by categoryid: Int) -> String {
+                return "categories/\(categoryid)"
+            }
         }
         
         struct ErrorMessage {

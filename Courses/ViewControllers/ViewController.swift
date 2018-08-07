@@ -13,16 +13,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ServerManager.shared.getCategories(completion: printCategories) { (error) in
+        ServerManager.shared.getSubCategories(categoryid: 2, completion: printSubcategories) { (error) in
             print(error)
         }
     }
     
-    func printCategories(categories: [Category]) {
-        for i in categories {
+    
+    func printSubcategories(subcat: [Subcategory]) {
+        for i in subcat {
             print(i.title!)
         }
-        
     }
 
 
