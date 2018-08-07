@@ -8,28 +8,40 @@
 
 import UIKit
 
-class CategoriesViewController: UIViewController {
+class CategoriesViewController: UIViewController, UICollectionViewDataSource {
 
+    @IBOutlet weak var categoriesCollectionView: UICollectionView!
+    
+    var catArray: [Category] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        categoriesCollectionView.dataSource = self
+        
+        ServerManager.shared.getCategories(completion: setCategories) { (error) in
+            print(error)
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func setCategories(category: [Category]) {
+        catArray = category
+        self.categoriesCollectionView.reloadData()
     }
-    */
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return catArray.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = categoriesCollectionView.dequeueReusableCell(withReuseIdentifier: "categoriescell", for: indexPath) as! CategoriesCell
+        cell.setCategories(cat: catArray[indexPath.item])
+        
+        return cell
+    }
+    
 
 }
