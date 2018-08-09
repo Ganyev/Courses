@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -192,20 +193,43 @@
             </objects>
             <point key="canvasLocation" x="2953" y="-1160"/>
         </scene>
-        <!--View Controller-->
+        <!--Courses List View Controller-->
         <scene sceneID="7R7-E4-urS">
             <objects>
-                <viewController id="FSx-so-UEy" sceneMemberID="viewController">
+                <viewController id="FSx-so-UEy" customClass="CoursesListViewController" customModule="Courses" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NTC-iV-mBx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kbr-Yi-ZAU">
+                                <rect key="frame" x="0.0" y="200" width="375" height="467"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Vh-zF-fdZ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="180"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Vh-zF-fdZ" firstAttribute="leading" secondItem="lBz-Xg-ezE" secondAttribute="leading" id="1m4-sG-aK9"/>
+                            <constraint firstItem="kbr-Yi-ZAU" firstAttribute="top" secondItem="6Vh-zF-fdZ" secondAttribute="bottom" id="3pR-ID-tFu"/>
+                            <constraint firstItem="6Vh-zF-fdZ" firstAttribute="trailing" secondItem="lBz-Xg-ezE" secondAttribute="trailing" id="EbO-nF-76l"/>
+                            <constraint firstItem="kbr-Yi-ZAU" firstAttribute="trailing" secondItem="lBz-Xg-ezE" secondAttribute="trailing" id="JZW-D8-6rj"/>
+                            <constraint firstItem="6Vh-zF-fdZ" firstAttribute="top" secondItem="lBz-Xg-ezE" secondAttribute="top" id="ghR-kA-ZvB"/>
+                            <constraint firstItem="kbr-Yi-ZAU" firstAttribute="height" secondItem="NTC-iV-mBx" secondAttribute="height" multiplier="0.7" id="uX5-6x-gG2"/>
+                            <constraint firstItem="kbr-Yi-ZAU" firstAttribute="bottom" secondItem="lBz-Xg-ezE" secondAttribute="bottom" id="vhG-4K-xJU"/>
+                            <constraint firstItem="kbr-Yi-ZAU" firstAttribute="leading" secondItem="lBz-Xg-ezE" secondAttribute="leading" id="x49-rC-pzd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lBz-Xg-ezE"/>
                     </view>
+                    <connections>
+                        <outlet property="imgView" destination="6Vh-zF-fdZ" id="1Bg-dU-WZY"/>
+                        <outlet property="tableView" destination="kbr-Yi-ZAU" id="lNn-3Z-nVF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W0B-v6-Pp2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3722" y="-1160"/>
+            <point key="canvasLocation" x="3720.8000000000002" y="-1160.8695652173915"/>
         </scene>
         <!--Item-->
         <scene sceneID="noW-Tk-DcD">
