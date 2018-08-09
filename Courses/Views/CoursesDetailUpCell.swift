@@ -1,5 +1,5 @@
 //
-//  CoursesTVCell.swift
+//  CoursesDetailUpCell.swift
 //  Courses
 //
 //  Created by Baha Ganyev on 09.08.2018.
@@ -8,18 +8,15 @@
 
 import UIKit
 
-class CoursesTVCell: UITableViewCell {
-
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+class CoursesDetailUpCell: UITableViewCell {
+    
     @IBOutlet weak var mainImage: UIImageView!
     @IBOutlet weak var logoImage: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
     
-    func setCourseList(courseList: CourseBase) {
-        nameLabel.text = courseList.title
-        descriptionLabel.text = courseList.description
-        
-        guard let mainImagePath = courseList.main_image_url else {
+    func setDetails(detail: CourseDetail) {
+        nameLabel.text = detail.title
+        guard let mainImagePath = detail.main_image_url else {
             return
         }
         guard let url = URL(string: mainImagePath) else {
@@ -27,7 +24,7 @@ class CoursesTVCell: UITableViewCell {
         }
         mainImage.kf.setImage(with: url)
         
-        guard let logoImagePath = courseList.logo_image_url else {
+        guard let logoImagePath = detail.logo_image_url else {
             return
         }
         guard let urlLogo = URL(string: logoImagePath) else {
@@ -35,7 +32,7 @@ class CoursesTVCell: UITableViewCell {
         }
         logoImage.kf.setImage(with: url)
     }
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

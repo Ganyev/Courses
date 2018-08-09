@@ -62,4 +62,21 @@ class ServerManager: HTTPRequestManager {
             error(errorMessage)
         }
     }
+    
+    func getCoursesDetail(courseid: Int, completion: @escaping (CourseDetail) -> (), error: @escaping (String) -> ()) {
+        self.get(endpoint: Constants.Network.EndPoint.courseDetail(by: courseid), completion: { (data) in
+            //TODO
+            do {
+                guard let  data = data else { return }
+                let result = try JSONDecoder().decode(CourseDetail.self, from: data)
+                completion(result)
+            }
+            catch let errorMessage {
+                error(errorMessage.localizedDescription)
+            }
+            
+        }) { (errorMessage) in
+            error(errorMessage)
+        }
+    }
 }

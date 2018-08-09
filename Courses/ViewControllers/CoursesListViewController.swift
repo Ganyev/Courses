@@ -9,7 +9,7 @@
 import UIKit
 import Kingfisher
 
-class CoursesListViewController: UIViewController, UITableViewDataSource {
+class CoursesListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var imgView: UIImageView!
@@ -24,7 +24,7 @@ class CoursesListViewController: UIViewController, UITableViewDataSource {
             print(error)
         }
         tableView.dataSource = self
-        
+        tableView.delegate = self
         nameLabel.text = coursesid.title
         guard let mainImagePath = coursesid.subcategory_image_url else {
             return
@@ -50,9 +50,15 @@ class CoursesListViewController: UIViewController, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "coursecell") as! CoursesTVCell
-        cell.setCoursesList(courseList: courseArray[indexPath.row])
-        
+        cell.setCourseList(courseList: courseArray[indexPath.row])
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let st = UIStoryboard.init(name: "Main", bundle: nil)
+        let vc = st.instantiateViewController(withIdentifier: "coursedetailvc") as! CoursesInfoViewController
+        vc.course = courseArray[indexPath.row]
+        self.show(vc, sender: self)
     }
 
 }

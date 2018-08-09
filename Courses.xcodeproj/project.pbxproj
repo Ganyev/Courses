@@ -25,6 +25,7 @@
 		9433EA3B2119E4B400011224 /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433EA3A2119E4B400011224 /* CategoriesCell.swift */; };
 		9433EA3F2119EA6D00011224 /* SubcategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433EA3E2119EA6D00011224 /* SubcategoriesViewController.swift */; };
 		948A4EAE211C774000FCCB6A /* CoursesInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A4EAD211C774000FCCB6A /* CoursesInfoViewController.swift */; };
+		948A4EB0211C847400FCCB6A /* CoursesDetailUpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A4EAF211C847400FCCB6A /* CoursesDetailUpCell.swift */; };
 		94D51BEA211C64C4003ECE6E /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D51BE9211C64C4003ECE6E /* CourseList.swift */; };
 		94EEE979211BD16500447905 /* CourseDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EEE978211BD16500447905 /* CourseDetails.swift */; };
 		94EEE97B211BDDEE00447905 /* CoursesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EEE97A211BDDEE00447905 /* CoursesListViewController.swift */; };
@@ -53,6 +54,7 @@
 		9433EA3A2119E4B400011224 /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
 		9433EA3E2119EA6D00011224 /* SubcategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubcategoriesViewController.swift; sourceTree = "<group>"; };
 		948A4EAD211C774000FCCB6A /* CoursesInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesInfoViewController.swift; sourceTree = "<group>"; };
+		948A4EAF211C847400FCCB6A /* CoursesDetailUpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesDetailUpCell.swift; sourceTree = "<group>"; };
 		94D51BE9211C64C4003ECE6E /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
 		94EEE978211BD16500447905 /* CourseDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetails.swift; sourceTree = "<group>"; };
 		94EEE97A211BDDEE00447905 /* CoursesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesListViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				9433EA3A2119E4B400011224 /* CategoriesCell.swift */,
 				942A30FE211B550D00E9CD4A /* SubcategoriesCell.swift */,
 				94EEE97C211BE06500447905 /* CoursesTVCell.swift */,
+				948A4EAF211C847400FCCB6A /* CoursesDetailUpCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				94EEE979211BD16500447905 /* CourseDetails.swift in Sources */,
 				94D51BEA211C64C4003ECE6E /* CourseList.swift in Sources */,
 				948A4EAE211C774000FCCB6A /* CoursesInfoViewController.swift in Sources */,
+				948A4EB0211C847400FCCB6A /* CoursesDetailUpCell.swift in Sources */,
 				9433EA152119D80300011224 /* ViewController.swift in Sources */,
 				9433EA132119D80300011224 /* AppDelegate.swift in Sources */,
 				94EEE97B211BDDEE00447905 /* CoursesListViewController.swift in Sources */,

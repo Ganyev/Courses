@@ -9,11 +9,23 @@
 import UIKit
 
 class CoursesInfoViewController: UIViewController, UITableViewDataSource {
-
+    
     @IBOutlet weak var infoTableView: UITableView!
+    
+    var courseDetails: CourseDetail?
+    var course: CourseBase?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         infoTableView.dataSource = self
+        ServerManager.shared.getCoursesDetail(courseid: course!.id!, completion: setCourseDetail) { (error) in
+            print(error)
+        }
+    }
+    
+    func setCourseDetail(detail: CourseDetail) {
+        courseDetails = detail
+        self.infoTableView.reloadData()
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -21,6 +33,24 @@ class CoursesInfoViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        guard let _ = courseDetails else {
+            return 0
+        }
+        if section == 0  {
+            return 1
+        }
+        return 0
     }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.section == 0 {
+            let cell = infoTableView.dequeueReusableCell(withIdentifier: "coursescell", for: indexPath) as! CoursesDetailUpCell
+            cell.setDetails(detail: courseDetails!)
+            return cell
+        }
+        return UITableViewCell()
+        
+    }
+    
+
 }
