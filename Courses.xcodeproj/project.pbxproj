@@ -24,8 +24,10 @@
 		9433EA372119E46300011224 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433EA362119E46300011224 /* CategoriesViewController.swift */; };
 		9433EA3B2119E4B400011224 /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433EA3A2119E4B400011224 /* CategoriesCell.swift */; };
 		9433EA3F2119EA6D00011224 /* SubcategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433EA3E2119EA6D00011224 /* SubcategoriesViewController.swift */; };
+		94D51BEA211C64C4003ECE6E /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D51BE9211C64C4003ECE6E /* CourseList.swift */; };
 		94EEE979211BD16500447905 /* CourseDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EEE978211BD16500447905 /* CourseDetails.swift */; };
 		94EEE97B211BDDEE00447905 /* CoursesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EEE97A211BDDEE00447905 /* CoursesListViewController.swift */; };
+		94EEE97D211BE06500447905 /* CoursesTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EEE97C211BE06500447905 /* CoursesTVCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,8 +51,10 @@
 		9433EA362119E46300011224 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		9433EA3A2119E4B400011224 /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
 		9433EA3E2119EA6D00011224 /* SubcategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubcategoriesViewController.swift; sourceTree = "<group>"; };
+		94D51BE9211C64C4003ECE6E /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
 		94EEE978211BD16500447905 /* CourseDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetails.swift; sourceTree = "<group>"; };
 		94EEE97A211BDDEE00447905 /* CoursesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesListViewController.swift; sourceTree = "<group>"; };
+		94EEE97C211BE06500447905 /* CoursesTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTVCell.swift; sourceTree = "<group>"; };
 		9A3A7A9D38AA4A198AE91124 /* Pods-Courses.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Courses.release.xcconfig"; path = "Pods/Target Support Files/Pods-Courses/Pods-Courses.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +138,7 @@
 				9433EA322119DBA000011224 /* Categories.swift */,
 				9433EA342119E11700011224 /* SubCategories.swift */,
 				94EEE978211BD16500447905 /* CourseDetails.swift */,
+				94D51BE9211C64C4003ECE6E /* CourseList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 			children = (
 				9433EA3A2119E4B400011224 /* CategoriesCell.swift */,
 				942A30FE211B550D00E9CD4A /* SubcategoriesCell.swift */,
+				94EEE97C211BE06500447905 /* CoursesTVCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -293,6 +299,7 @@
 				9433EA332119DBA000011224 /* Categories.swift in Sources */,
 				9433EA372119E46300011224 /* CategoriesViewController.swift in Sources */,
 				94EEE979211BD16500447905 /* CourseDetails.swift in Sources */,
+				94D51BEA211C64C4003ECE6E /* CourseList.swift in Sources */,
 				9433EA152119D80300011224 /* ViewController.swift in Sources */,
 				9433EA132119D80300011224 /* AppDelegate.swift in Sources */,
 				94EEE97B211BDDEE00447905 /* CoursesListViewController.swift in Sources */,
@@ -301,6 +308,7 @@
 				9433EA2D2119D9E800011224 /* HTTPStatusCode.swift in Sources */,
 				942A3101211B58D100E9CD4A /* Extensions.swift in Sources */,
 				9433EA3F2119EA6D00011224 /* SubcategoriesViewController.swift in Sources */,
+				94EEE97D211BE06500447905 /* CoursesTVCell.swift in Sources */,
 				9433EA2B2119D9D400011224 /* HTTPRequestManager.swift in Sources */,
 				9433EA352119E11700011224 /* SubCategories.swift in Sources */,
 				9433EA312119DA4E00011224 /* Constants.swift in Sources */,

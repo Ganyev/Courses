@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SubcategoriesViewController: UIViewController, UICollectionViewDataSource {
+class SubcategoriesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     var subCatArray: [Subcategory] = []
     var category: Category!
@@ -20,6 +20,7 @@ class SubcategoriesViewController: UIViewController, UICollectionViewDataSource 
             print(error)
         }
         subCatCollectionView.dataSource = self
+        subCatCollectionView.delegate = self
     }
     
     func setSubCategories(subCat: [Subcategory]) {
@@ -40,4 +41,13 @@ class SubcategoriesViewController: UIViewController, UICollectionViewDataSource 
         cell.setSubcategories(subcat: subCatArray[indexPath.item])
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "CoursesVC") as! CoursesListViewController
+        vc.coursesid = subCatArray[indexPath.item]
+        self.show(vc, sender: self)
+    }
+    
+    
 }

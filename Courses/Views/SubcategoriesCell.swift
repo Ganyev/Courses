@@ -8,7 +8,7 @@
 
 import UIKit
 
-var subcat: Subcategory?
+//var subcat: Subcategory?
 
 class SubcategoriesCell: UICollectionViewCell {
     

@@ -14,8 +14,8 @@ struct Constants {
             static func subcategories(by categoryid: Int) -> String {
                 return "categories/\(categoryid)"
             }
-            static func courseDetail(by subcategoryid: Int) -> String {
-                return "courses/\(subcategoryid)"
+            static func courseList(by subcategoryid: Int) -> String {
+                return "subcategories/\(subcategoryid)"
             }
         }
         

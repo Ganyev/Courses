@@ -7,17 +7,37 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CoursesListViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
     
-    var courseArray: [CourseDetail] = []
+    var courseArray: [CourseBase] = []
+    var coursesid: Subcategory!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ServerManager.shared.getCoursesList(subcategoryid: coursesid.id!, completion: setCoursesList) { (error) in
+            print(error)
+        }
         tableView.dataSource = self
+        
+        nameLabel.text = coursesid.title
+        guard let mainImagePath = coursesid.subcategory_image_url else {
+            return
+        }
+        guard let url = URL(string: mainImagePath) else {
+            return
+        }
+        imgView.kf.setImage(with: url)
+    }
+    
+    func setCoursesList(courseslist: [CourseBase]) {
+        courseArray = courseslist
+        self.tableView.reloadData()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -29,7 +49,9 @@ class CoursesListViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "coursecell") as! CoursesTVCell
+        cell.setCoursesList(courseList: courseArray[indexPath.row])
+        
         return cell
     }
 
