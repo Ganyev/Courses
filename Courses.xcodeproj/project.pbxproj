@@ -25,6 +25,7 @@
 		9433EA3B2119E4B400011224 /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433EA3A2119E4B400011224 /* CategoriesCell.swift */; };
 		9433EA3F2119EA6D00011224 /* SubcategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433EA3E2119EA6D00011224 /* SubcategoriesViewController.swift */; };
 		94EEE979211BD16500447905 /* CourseDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EEE978211BD16500447905 /* CourseDetails.swift */; };
+		94EEE97B211BDDEE00447905 /* CoursesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EEE97A211BDDEE00447905 /* CoursesListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		9433EA3A2119E4B400011224 /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
 		9433EA3E2119EA6D00011224 /* SubcategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubcategoriesViewController.swift; sourceTree = "<group>"; };
 		94EEE978211BD16500447905 /* CourseDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetails.swift; sourceTree = "<group>"; };
+		94EEE97A211BDDEE00447905 /* CoursesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesListViewController.swift; sourceTree = "<group>"; };
 		9A3A7A9D38AA4A198AE91124 /* Pods-Courses.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Courses.release.xcconfig"; path = "Pods/Target Support Files/Pods-Courses/Pods-Courses.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +144,7 @@
 				9433EA142119D80300011224 /* ViewController.swift */,
 				9433EA362119E46300011224 /* CategoriesViewController.swift */,
 				9433EA3E2119EA6D00011224 /* SubcategoriesViewController.swift */,
+				94EEE97A211BDDEE00447905 /* CoursesListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				94EEE979211BD16500447905 /* CourseDetails.swift in Sources */,
 				9433EA152119D80300011224 /* ViewController.swift in Sources */,
 				9433EA132119D80300011224 /* AppDelegate.swift in Sources */,
+				94EEE97B211BDDEE00447905 /* CoursesListViewController.swift in Sources */,
 				9433EA3B2119E4B400011224 /* CategoriesCell.swift in Sources */,
 				942A30FF211B550D00E9CD4A /* SubcategoriesCell.swift in Sources */,
 				9433EA2D2119D9E800011224 /* HTTPStatusCode.swift in Sources */,
