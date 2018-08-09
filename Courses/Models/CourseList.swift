@@ -18,8 +18,3 @@ class CourseBase: Decodable {
     var tariff: String?
 }
 
-//class SubcategoryResult: Decodable {
-//    var id: Int?
-//    var title: String?
-//    var subcategory_image_url: String?
-//}

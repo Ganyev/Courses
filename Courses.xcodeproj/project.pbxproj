@@ -139,8 +139,8 @@
 			children = (
 				9433EA322119DBA000011224 /* Categories.swift */,
 				9433EA342119E11700011224 /* SubCategories.swift */,
-				94EEE978211BD16500447905 /* CourseDetails.swift */,
 				94D51BE9211C64C4003ECE6E /* CourseList.swift */,
+				94EEE978211BD16500447905 /* CourseDetails.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";

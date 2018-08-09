@@ -42,6 +42,11 @@ class SubcategoriesViewController: UIViewController, UICollectionViewDataSource,
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let size = CGSize(width: 191, height: 150)
+        return size
+    }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "CoursesVC") as! CoursesListViewController
