@@ -30,7 +30,7 @@ class CoursesDetailUpCell: UITableViewCell {
         guard let urlLogo = URL(string: logoImagePath) else {
             return
         }
-        logoImage.kf.setImage(with: url)
+        logoImage.kf.setImage(with: urlLogo)
     }
 
     override func awakeFromNib() {

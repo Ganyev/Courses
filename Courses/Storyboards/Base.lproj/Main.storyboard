@@ -46,7 +46,7 @@
             </objects>
             <point key="canvasLocation" x="1186" y="-87"/>
         </scene>
-        <!--Categories View Controller-->
+        <!--Категории-->
         <scene sceneID="bQx-kU-37i">
             <objects>
                 <viewController storyboardIdentifier="categoriesvc" id="Q7r-mA-Xg4" customClass="CategoriesViewController" customModule="Courses" customModuleProvider="target" sceneMemberID="viewController">
@@ -122,7 +122,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OdH-LL-bTK"/>
                     </view>
-                    <navigationItem key="navigationItem" id="g49-fz-n7O"/>
+                    <navigationItem key="navigationItem" title="Категории" id="g49-fz-n7O"/>
                     <connections>
                         <outlet property="categoriesCollectionView" destination="CyP-wC-EuK" id="x3e-sz-5WM"/>
                     </connections>
@@ -230,7 +230,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="136.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MeE-s4-VFN">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MeE-s4-VFN">
                                                     <rect key="frame" x="10" y="7" width="42" height="42"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="42" id="DvW-BR-5IV"/>
@@ -344,7 +344,7 @@
                                                         <constraint firstAttribute="width" constant="375" id="gEr-dW-uVB"/>
                                                     </constraints>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hU0-4j-kzP">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hU0-4j-kzP">
                                                     <rect key="frame" x="142.5" y="168" width="90" height="90"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="90" id="gsY-cN-NOg"/>
