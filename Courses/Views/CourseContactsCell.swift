@@ -12,6 +12,10 @@ class CourseContactsCell: UITableViewCell {
 
     @IBOutlet weak var contactLabel: UILabel!
     
+    func setContacts(contact: Contact) {
+        contactLabel.text = contact.contact
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

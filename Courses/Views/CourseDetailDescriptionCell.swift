@@ -17,6 +17,7 @@ class CourseDetailDescriptionCell: UITableViewCell {
     @IBOutlet weak var servicesButton: UIButton!
     var delegate: CourseTypeDelegate?
     
+    //Delegate
     @IBAction func buttonTapped(button: UIButton) {
         let type = CourseInfoType(rawValue: button.tag)
         delegate?.changeCourseType(type: type!)

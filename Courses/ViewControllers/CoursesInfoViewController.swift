@@ -13,6 +13,7 @@ class CoursesInfoViewController: UIViewController, UITableViewDataSource, Course
     
     @IBOutlet weak var infoTableView: UITableView!
     
+    var contacts: [Contact] = []
     var courseDetails: CourseDetail?
     var course: CourseBase?
     var curentType: CourseInfoType = .info
@@ -23,13 +24,17 @@ class CoursesInfoViewController: UIViewController, UITableViewDataSource, Course
             print(error)
         }
     }
-    
+    //Delegate
     func changeCourseType(type: CourseInfoType) {
         self.curentType = type
         print(type)
         infoTableView.reloadData()
     }
    
+    func setContacts(contact: [Contact]) {
+        contacts = contact
+        infoTableView.reloadData()
+    }
     
     func setCourseDetail(detail: CourseDetail) {
         courseDetails = detail
@@ -84,7 +89,9 @@ class CoursesInfoViewController: UIViewController, UITableViewDataSource, Course
             return cell
         }
         if curentType == .contact {
-            //show constant cell
+            let cell = infoTableView.dequeueReusableCell(withIdentifier: "coursecontactscell", for: indexPath) as! CourseContactsCell
+            cell.setContacts(contact:courseDetails!.contacts[indexPath.row])
+            return cell
         }
         
         return UITableViewCell()

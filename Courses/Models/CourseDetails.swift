@@ -14,32 +14,32 @@ class CourseDetail: Decodable {
     var description: String?
     var main_image_url: String?
     var logo_image_url: String?
-    var contacts: [ContactResults] = []
-    var branches: [BranchResults] = []
-    var services: [ServiceResults] = []
-    var actions: [ActionResults] = []
+    var contacts: [Contact] = []
+    var branches: [Branch] = []
+    var services: [Service] = []
+    var actions: [Action] = []
     var added: String?
     var updated: String?
 }
 
-class ContactResults: Decodable {
+class Contact: Decodable {
     var type: String?
     var contact: String?
 }
 
-class BranchResults: Decodable {
+class Branch: Decodable {
     var address: String?
     var latitude: String?
     var longitude: String?
 }
 
-class ServiceResults: Decodable {
+class Service: Decodable {
     var title: String?
     var description: String?
     var price: String?
 }
 
-class ActionResults: Decodable {
+class Action: Decodable {
     var id: Int?
     var title: String?
     var description: String?
