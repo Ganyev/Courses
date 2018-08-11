@@ -10,11 +10,17 @@ import UIKit
 
 class CourseDetailDescriptionCell: UITableViewCell {
 
-    @IBOutlet weak var firstButton: UIButton!
-    @IBOutlet weak var secondButton: UIButton!
-    @IBOutlet weak var thirdButton: UIButton!
-    @IBOutlet weak var fourthButton: UIButton!
-    @IBOutlet weak var fifthButton: UIButton!
+    @IBOutlet weak var infoButton: UIButton!
+    @IBOutlet weak var promoButton: UIButton!
+    @IBOutlet weak var branchesButton: UIButton!
+    @IBOutlet weak var contactsButton: UIButton!
+    @IBOutlet weak var servicesButton: UIButton!
+    var delegate: CourseTypeDelegate?
+    
+    @IBAction func buttonTapped(button: UIButton) {
+        let type = CourseInfoType(rawValue: button.tag)
+        delegate?.changeCourseType(type: type!)
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

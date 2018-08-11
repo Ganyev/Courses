@@ -8,13 +8,14 @@
 
 import UIKit
 
-class CoursesInfoViewController: UIViewController, UITableViewDataSource {
+
+class CoursesInfoViewController: UIViewController, UITableViewDataSource, CourseTypeDelegate {
     
     @IBOutlet weak var infoTableView: UITableView!
     
     var courseDetails: CourseDetail?
     var course: CourseBase?
-    
+    var curentType: CourseInfoType = .info
     override func viewDidLoad() {
         super.viewDidLoad()
         infoTableView.dataSource = self
@@ -22,6 +23,13 @@ class CoursesInfoViewController: UIViewController, UITableViewDataSource {
             print(error)
         }
     }
+    
+    func changeCourseType(type: CourseInfoType) {
+        self.curentType = type
+        print(type)
+        infoTableView.reloadData()
+    }
+   
     
     func setCourseDetail(detail: CourseDetail) {
         courseDetails = detail
@@ -39,18 +47,46 @@ class CoursesInfoViewController: UIViewController, UITableViewDataSource {
         if section == 0  {
             return 2
         }
+        if curentType == .info {
+            return 1
+        }
+        if curentType == .contact {
+            return courseDetails!.contacts.count
+        }
+        if curentType == .branche {
+            return courseDetails!.branches.count
+        }
+        if curentType == .promo {
+            return courseDetails!.actions.count
+        }
+        if curentType == .service {
+            return 1
+        }
         return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         if indexPath.section == 0 && indexPath.row == 0 {
             let cell = infoTableView.dequeueReusableCell(withIdentifier: "coursescell", for: indexPath) as! CoursesDetailUpCell
             cell.setDetails(detail: courseDetails!)
             return cell
-        } else if indexPath.section == 0 && indexPath.row == 1 {
+        }
+        if indexPath.section == 0 && indexPath.row == 1
+        {
             let cell = infoTableView.dequeueReusableCell(withIdentifier: "fivebuttonscell", for: indexPath) as! CourseDetailDescriptionCell
+            cell.delegate = self
             return cell
         }
+        if curentType == .info {
+            let cell = infoTableView.dequeueReusableCell(withIdentifier: "courseinfocell", for: indexPath) as! CourseInfoCell
+            cell.courseInfoLabel.text = courseDetails?.description
+            return cell
+        }
+        if curentType == .contact {
+            //show constant cell
+        }
+        
         return UITableViewCell()
         
     }
