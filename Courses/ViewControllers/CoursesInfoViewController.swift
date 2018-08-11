@@ -37,15 +37,18 @@ class CoursesInfoViewController: UIViewController, UITableViewDataSource {
             return 0
         }
         if section == 0  {
-            return 1
+            return 2
         }
         return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.section == 0 {
+        if indexPath.section == 0 && indexPath.row == 0 {
             let cell = infoTableView.dequeueReusableCell(withIdentifier: "coursescell", for: indexPath) as! CoursesDetailUpCell
             cell.setDetails(detail: courseDetails!)
+            return cell
+        } else if indexPath.section == 0 && indexPath.row == 1 {
+            let cell = infoTableView.dequeueReusableCell(withIdentifier: "fivebuttonscell", for: indexPath) as! CourseDetailDescriptionCell
             return cell
         }
         return UITableViewCell()

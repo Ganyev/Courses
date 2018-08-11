@@ -351,14 +351,14 @@
                                                         <constraint firstAttribute="height" constant="90" id="kdZ-KQ-Jkq"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Рейтинг" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAT-eX-5XK">
-                                                    <rect key="frame" x="20" y="233" width="115" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рейтинг" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAT-eX-5XK">
+                                                    <rect key="frame" x="20" y="233" width="58.5" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Сохранили" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9S6-q2-aw8">
-                                                    <rect key="frame" x="252" y="233" width="113" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сохранили" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9S6-q2-aw8">
+                                                    <rect key="frame" x="285.5" y="233" width="79.5" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -389,6 +389,76 @@
                                             <outlet property="logoImage" destination="hU0-4j-kzP" id="bxa-ID-AgR"/>
                                             <outlet property="mainImage" destination="UaJ-NI-5Qd" id="I8k-oO-8pk"/>
                                             <outlet property="nameLabel" destination="VlY-a0-eNU" id="PVJ-ZB-KBI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="fivebuttonscell" id="SFB-Qu-ejp" customClass="CourseDetailDescriptionCell" customModule="Courses" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="326" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SFB-Qu-ejp" id="5u5-4g-ns5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnZ-DV-Ufv">
+                                                    <rect key="frame" x="64.5" y="9" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="bod-vr-0T9"/>
+                                                        <constraint firstAttribute="width" constant="25" id="izK-qX-8Ab"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="file"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AsE-3H-7Mf">
+                                                    <rect key="frame" x="174.5" y="9" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="2oB-eu-qEQ"/>
+                                                        <constraint firstAttribute="width" constant="25" id="sD5-4g-HwE"/>
+                                                    </constraints>
+                                                    <state key="normal" title="infp" image="placeholder"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MnL-Tj-y3w">
+                                                    <rect key="frame" x="284.5" y="9" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="uSA-mV-kZS"/>
+                                                        <constraint firstAttribute="height" constant="25" id="zN0-lv-SWe"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="success"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUY-TF-MJr">
+                                                    <rect key="frame" x="229.5" y="9" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="Wli-Vu-P0f"/>
+                                                        <constraint firstAttribute="width" constant="25" id="ZkZ-vx-Uac"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="share"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJO-y9-6Gz">
+                                                    <rect key="frame" x="119.5" y="9" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="HaI-rO-xsD"/>
+                                                        <constraint firstAttribute="width" constant="25" id="jRS-w3-Ucu"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="paper-plane"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="EnZ-DV-Ufv" firstAttribute="centerY" secondItem="5u5-4g-ns5" secondAttribute="centerY" id="24O-zE-iXY"/>
+                                                <constraint firstItem="AsE-3H-7Mf" firstAttribute="leading" secondItem="nJO-y9-6Gz" secondAttribute="trailing" constant="30" id="4hi-Pv-8IE"/>
+                                                <constraint firstItem="nJO-y9-6Gz" firstAttribute="centerY" secondItem="EnZ-DV-Ufv" secondAttribute="centerY" id="AjR-pM-JcO"/>
+                                                <constraint firstItem="AsE-3H-7Mf" firstAttribute="centerX" secondItem="5u5-4g-ns5" secondAttribute="centerX" id="F1M-si-Dcx"/>
+                                                <constraint firstItem="MnL-Tj-y3w" firstAttribute="leading" secondItem="rUY-TF-MJr" secondAttribute="trailing" constant="30" id="M4e-rW-wd0"/>
+                                                <constraint firstItem="rUY-TF-MJr" firstAttribute="centerY" secondItem="EnZ-DV-Ufv" secondAttribute="centerY" id="dmr-xM-lPV"/>
+                                                <constraint firstItem="rUY-TF-MJr" firstAttribute="leading" secondItem="AsE-3H-7Mf" secondAttribute="trailing" constant="30" id="eWU-Tf-vnk"/>
+                                                <constraint firstItem="AsE-3H-7Mf" firstAttribute="centerY" secondItem="EnZ-DV-Ufv" secondAttribute="centerY" id="ep7-Yq-jfz"/>
+                                                <constraint firstItem="nJO-y9-6Gz" firstAttribute="leading" secondItem="EnZ-DV-Ufv" secondAttribute="trailing" constant="30" id="lHU-US-Ti9"/>
+                                                <constraint firstItem="MnL-Tj-y3w" firstAttribute="centerY" secondItem="EnZ-DV-Ufv" secondAttribute="centerY" id="tjY-eQ-GSs"/>
+                                                <constraint firstItem="AsE-3H-7Mf" firstAttribute="centerY" secondItem="5u5-4g-ns5" secondAttribute="centerY" id="vhO-GW-OTZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="fifthButton" destination="MnL-Tj-y3w" id="1XM-c3-Jsd"/>
+                                            <outlet property="firstButton" destination="EnZ-DV-Ufv" id="Gba-lo-rab"/>
+                                            <outlet property="fourthButton" destination="rUY-TF-MJr" id="Avy-wP-I9D"/>
+                                            <outlet property="secondButton" destination="nJO-y9-6Gz" id="2fc-04-KbP"/>
+                                            <outlet property="thirdButton" destination="AsE-3H-7Mf" id="0Ry-VQ-Yby"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -435,4 +505,11 @@
             <point key="canvasLocation" x="1185" y="-828"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="file" width="256" height="256"/>
+        <image name="paper-plane" width="256" height="256"/>
+        <image name="placeholder" width="512" height="512"/>
+        <image name="share" width="512" height="512"/>
+        <image name="success" width="256" height="256"/>
+    </resources>
 </document>
