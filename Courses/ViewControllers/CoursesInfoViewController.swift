@@ -9,7 +9,7 @@
 import UIKit
 
 
-class CoursesInfoViewController: UIViewController, UITableViewDataSource, CourseTypeDelegate {
+class CoursesInfoViewController: UIViewController, UITableViewDataSource, CourseTypeDelegate, UITableViewDelegate {
     
     @IBOutlet weak var infoTableView: UITableView!
     
@@ -19,6 +19,8 @@ class CoursesInfoViewController: UIViewController, UITableViewDataSource, Course
     var curentType: CourseInfoType = .info
     override func viewDidLoad() {
         super.viewDidLoad()
+        infoTableView.rowHeight = UITableViewAutomaticDimension
+        infoTableView.estimatedRowHeight = 50
         infoTableView.dataSource = self
         ServerManager.shared.getCoursesDetail(courseid: course!.id!, completion: setCourseDetail) { (error) in
             print(error)
@@ -28,11 +30,6 @@ class CoursesInfoViewController: UIViewController, UITableViewDataSource, Course
     func changeCourseType(type: CourseInfoType) {
         self.curentType = type
         print(type)
-        infoTableView.reloadData()
-    }
-   
-    func setContacts(contact: [Contact]) {
-        contacts = contact
         infoTableView.reloadData()
     }
     
@@ -65,7 +62,7 @@ class CoursesInfoViewController: UIViewController, UITableViewDataSource, Course
             return courseDetails!.actions.count
         }
         if curentType == .service {
-            return 1
+            return courseDetails!.services.count
         }
         return 0
     }
@@ -93,10 +90,18 @@ class CoursesInfoViewController: UIViewController, UITableViewDataSource, Course
             cell.setContacts(contact:courseDetails!.contacts[indexPath.row])
             return cell
         }
-        
+        if curentType == .service {
+            let cell = infoTableView.dequeueReusableCell(withIdentifier: "courseservicecell", for: indexPath) as! CourseServicesCell
+            cell.setServices(service: courseDetails!.services[indexPath.row])
+            
+            return cell
+        }
         return UITableViewCell()
         
     }
     
-
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
 }

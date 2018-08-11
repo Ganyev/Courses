@@ -526,6 +526,51 @@
                                             <outlet property="contactLabel" destination="R6H-3Y-cGM" id="BkU-ZE-OJ3"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="courseservicecell" rowHeight="103" id="c1i-Og-jm3" customClass="CourseServicesCell" customModule="Courses" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="458" width="375" height="103"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c1i-Og-jm3" id="mwu-t0-pZj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="102.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQW-tE-SgW">
+                                                    <rect key="frame" x="35" y="16" width="305" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmW-BE-rOb">
+                                                    <rect key="frame" x="30" y="49" width="315" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEs-tf-ijO">
+                                                    <rect key="frame" x="30" y="75" width="31" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bmW-BE-rOb" firstAttribute="leading" secondItem="mwu-t0-pZj" secondAttribute="leadingMargin" constant="15" id="7ZD-XS-212"/>
+                                                <constraint firstItem="AEs-tf-ijO" firstAttribute="leading" secondItem="mwu-t0-pZj" secondAttribute="leadingMargin" constant="15" id="Jcx-lw-I8l"/>
+                                                <constraint firstItem="gQW-tE-SgW" firstAttribute="leading" secondItem="mwu-t0-pZj" secondAttribute="leadingMargin" constant="20" id="Jn3-zw-kCB"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="gQW-tE-SgW" secondAttribute="trailing" constant="20" id="Ohz-m1-HcG"/>
+                                                <constraint firstItem="gQW-tE-SgW" firstAttribute="top" secondItem="mwu-t0-pZj" secondAttribute="topMargin" constant="5" id="TXK-Xu-skK"/>
+                                                <constraint firstItem="bmW-BE-rOb" firstAttribute="top" secondItem="gQW-tE-SgW" secondAttribute="bottom" constant="15" id="ire-GE-Abb"/>
+                                                <constraint firstItem="gQW-tE-SgW" firstAttribute="centerX" secondItem="mwu-t0-pZj" secondAttribute="centerX" id="joX-Zl-52l"/>
+                                                <constraint firstAttribute="bottom" secondItem="AEs-tf-ijO" secondAttribute="bottom" constant="11.5" id="mwv-o8-43O"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="bmW-BE-rOb" secondAttribute="trailing" constant="15" id="pZ1-Ad-OCN"/>
+                                                <constraint firstItem="AEs-tf-ijO" firstAttribute="top" secondItem="bmW-BE-rOb" secondAttribute="bottom" constant="10" id="pbj-ru-4tJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="bmW-BE-rOb" id="fn9-xE-Fle"/>
+                                            <outlet property="nameLabel" destination="gQW-tE-SgW" id="ApR-iT-llz"/>
+                                            <outlet property="priceLable" destination="AEs-tf-ijO" id="JTy-k4-0Uv"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="wHl-h1-K7h" id="JJI-qk-x4H"/>
