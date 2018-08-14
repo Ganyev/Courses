@@ -64,6 +64,9 @@ class CoursesInfoViewController: UIViewController, UITableViewDataSource, Course
         if curentType == .service {
             return courseDetails!.services.count
         }
+        if curentType == .branche {
+            return courseDetails!.branches.count
+        }
         return 0
     }
     
@@ -93,7 +96,16 @@ class CoursesInfoViewController: UIViewController, UITableViewDataSource, Course
         if curentType == .service {
             let cell = infoTableView.dequeueReusableCell(withIdentifier: "courseservicecell", for: indexPath) as! CourseServicesCell
             cell.setServices(service: courseDetails!.services[indexPath.row])
-            
+            return cell
+        }
+        if curentType == .branche {
+            let cell = infoTableView.dequeueReusableCell(withIdentifier: "coursebranchescell", for: indexPath) as! CourseBranchesCell
+            cell.setBranches(branch: courseDetails!.branches[indexPath.row])
+            return cell
+        }
+        if curentType == .promo {
+            let cell = infoTableView.dequeueReusableCell(withIdentifier: "coursepromocell", for: indexPath) as! CourseActionsCell
+            cell.setActions(action: courseDetails!.actions[indexPath.row])
             return cell
         }
         return UITableViewCell()
