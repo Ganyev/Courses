@@ -12,27 +12,17 @@ import Kingfisher
 class CoursesListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var imgView: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
     
     var courseArray: [CourseBase] = []
-    var coursesid: Subcategory!
+    var subcategory: Subcategory!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ServerManager.shared.getCoursesList(subcategoryid: coursesid.id!, completion: setCoursesList) { (error) in
+        ServerManager.shared.getCoursesList(subcategoryid: subcategory.id!, completion: setCoursesList) { (error) in
             print(error)
         }
         tableView.dataSource = self
         tableView.delegate = self
-        nameLabel.text = coursesid.title
-        guard let mainImagePath = coursesid.subcategory_image_url else {
-            return
-        }
-        guard let url = URL(string: mainImagePath) else {
-            return
-        }
-        imgView.kf.setImage(with: url)
     }
     
     func setCoursesList(courseslist: [CourseBase]) {
@@ -41,14 +31,22 @@ class CoursesListViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 0 {
+            return 1
+        }
         return courseArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.section == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "courselogocell") as! CoursesListLogoCell
+            cell.setData(subcategory: subcategory)
+            return cell
+        }
         let cell = tableView.dequeueReusableCell(withIdentifier: "coursecell") as! CoursesTVCell
         cell.setCourseList(courseList: courseArray[indexPath.row])
         return cell
@@ -59,6 +57,13 @@ class CoursesListViewController: UIViewController, UITableViewDataSource, UITabl
         let vc = st.instantiateViewController(withIdentifier: "coursedetailvc") as! CoursesInfoViewController
         vc.course = courseArray[indexPath.row]
         self.show(vc, sender: self)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 0 {
+            return 250
+        }
+        return UITableViewAutomaticDimension
     }
 
 }

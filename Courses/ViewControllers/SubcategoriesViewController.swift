@@ -50,7 +50,7 @@ class SubcategoriesViewController: UIViewController, UICollectionViewDataSource,
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "CoursesVC") as! CoursesListViewController
-        vc.coursesid = subCatArray[indexPath.item]
+        vc.subcategory = subCatArray[indexPath.item]
         self.show(vc, sender: self)
     }
     
