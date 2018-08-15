@@ -22,10 +22,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="5zM-TR-Hpz" kind="relationship" relationship="viewControllers" id="WSn-6f-U6a"/>
-                        <segue destination="eEf-dA-hyB" kind="relationship" relationship="viewControllers" id="xPv-cr-cLa"/>
-                        <segue destination="TkT-wF-lch" kind="relationship" relationship="viewControllers" id="UOv-IK-G5I"/>
-                        <segue destination="GhD-qt-flf" kind="relationship" relationship="viewControllers" id="c5K-ye-W6h"/>
+                        <segue destination="eEf-dA-hyB" kind="relationship" relationship="viewControllers" id="t3I-0S-qSx"/>
+                        <segue destination="5zM-TR-Hpz" kind="relationship" relationship="viewControllers" id="LTp-nU-8b4"/>
+                        <segue destination="TkT-wF-lch" kind="relationship" relationship="viewControllers" id="X6e-VY-dLu"/>
+                        <segue destination="GhD-qt-flf" kind="relationship" relationship="viewControllers" id="a72-Ox-2Lm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CL1-6M-enO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -872,11 +872,11 @@
             </objects>
             <point key="canvasLocation" x="4501.6000000000004" y="-827.58620689655174"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="noW-Tk-DcD">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5zM-TR-Hpz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="hCH-iG-w1a"/>
+                    <tabBarItem key="tabBarItem" title="" image="book" id="hCH-iG-w1a"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="a9W-Kn-uPo">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -891,11 +891,11 @@
             </objects>
             <point key="canvasLocation" x="1185" y="-828"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="B7C-Lu-Psb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TkT-wF-lch" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="XW3-Lg-BGq"/>
+                    <tabBarItem key="tabBarItem" title="" image="copy" id="XW3-Lg-BGq"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gWI-QC-Lql">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -991,11 +991,11 @@
             </objects>
             <point key="canvasLocation" x="2124" y="1503.5982008995504"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="DR7-Wb-t0R">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eEf-dA-hyB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="XC1-x4-S4G"/>
+                    <tabBarItem key="tabBarItem" title="" image="home" largeContentSizeImage="home" selectedImage="home" id="XC1-x4-S4G"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DkE-a8-9iu">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1010,11 +1010,11 @@
             </objects>
             <point key="canvasLocation" x="1184.8" y="-87.706146926536732"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="YtD-q7-iCB">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GhD-qt-flf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="e3F-jx-29e"/>
+                    <tabBarItem key="tabBarItem" title="" image="graduation_cap" id="e3F-jx-29e"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="roq-Dl-5TJ">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1031,7 +1031,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="book" width="30" height="30"/>
+        <image name="copy" width="30" height="30"/>
         <image name="file" width="256" height="256"/>
+        <image name="graduation_cap" width="30" height="30"/>
+        <image name="home" width="30" height="30"/>
         <image name="paper-plane" width="256" height="256"/>
         <image name="pin" width="256" height="256"/>
         <image name="placeholder" width="512" height="512"/>
