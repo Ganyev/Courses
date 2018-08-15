@@ -24,6 +24,8 @@ struct Constants {
                 return "courses/?page=3&page_size=\(courseid)"
             }
             static let news = "news"
+            static let universities = "universities/categories/"
+            
             
         }
         
