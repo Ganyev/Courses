@@ -1,34 +1,34 @@
 //
-//  CourseActionsCell.swift
+//  NewsCell.swift
 //  Courses
 //
-//  Created by Baha Ganyev on 14.08.2018.
+//  Created by Baha Ganyev on 15.08.2018.
 //  Copyright © 2018 Baha Ganyev. All rights reserved.
 //
 
 import UIKit
 import Kingfisher
 
-class CourseActionsCell: UITableViewCell {
-    
-    @IBOutlet weak var imgView: UIImageView!
+class NewsCell: UITableViewCell {
+
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descLabel: UILabel!
+    @IBOutlet weak var mainImage: UIImageView!
     @IBOutlet weak var dateLabel: UILabel!
     
-    func setActions(action: Action) {
-        nameLabel.text = action.title
-        descLabel.text = action.description
-        dateLabel.text = "Действует до: \(action.end_date!)"
-        guard let mainImagePath = action.action_image else {
+    func setDataNews(newsData: NewsResult) {
+        nameLabel.text = newsData.title
+        descLabel.text = newsData.description
+        dateLabel.text = "Добавлено: \(newsData.added!)"
+        guard let mainImagePath = newsData.news_image else {
             return
         }
         guard let url = URL(string: mainImagePath) else {
             return
         }
-        imgView.kf.setImage(with: url)
+        mainImage.kf.setImage(with: url)
     }
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

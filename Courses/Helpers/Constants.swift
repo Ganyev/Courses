@@ -23,6 +23,8 @@ struct Constants {
             static func coursePaginatedDetail(by courseid: Int) -> String {
                 return "courses/?page=3&page_size=\(courseid)"
             }
+            static let news = "news"
+            
         }
         
         struct ErrorMessage {

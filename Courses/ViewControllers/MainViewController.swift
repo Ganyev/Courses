@@ -50,10 +50,5 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         vc.course = coursePaginatedArray[indexPath.row]
         self.show(vc, sender: self)
     }
-    
-    func setCoursesList(courseslist: [CourseBase]) {
-        coursePaginatedArray = courseslist
-        self.tableView.reloadData()
-    }
 
 }
