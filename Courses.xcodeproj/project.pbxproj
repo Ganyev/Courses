@@ -12,18 +12,21 @@
 		942A3101211B58D100E9CD4A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942A3100211B58D100E9CD4A /* Extensions.swift */; };
 		9433EA132119D80300011224 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433EA122119D80300011224 /* AppDelegate.swift */; };
 		9433EA152119D80300011224 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433EA142119D80300011224 /* ViewController.swift */; };
-		9433EA182119D80300011224 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9433EA162119D80300011224 /* Main.storyboard */; };
 		9433EA1A2119D80500011224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9433EA192119D80500011224 /* Assets.xcassets */; };
 		9433EA1D2119D80500011224 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9433EA1B2119D80500011224 /* LaunchScreen.storyboard */; };
 		9433EA2B2119D9D400011224 /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433EA2A2119D9D400011224 /* HTTPRequestManager.swift */; };
 		9433EA2D2119D9E800011224 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433EA2C2119D9E800011224 /* HTTPStatusCode.swift */; };
-		9433EA2F2119D9F400011224 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433EA2E2119D9F400011224 /* ServerManager.swift */; };
 		9433EA312119DA4E00011224 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433EA302119DA4E00011224 /* Constants.swift */; };
 		9433EA332119DBA000011224 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433EA322119DBA000011224 /* Categories.swift */; };
 		9433EA352119E11700011224 /* SubCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433EA342119E11700011224 /* SubCategories.swift */; };
 		9433EA372119E46300011224 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433EA362119E46300011224 /* CategoriesViewController.swift */; };
 		9433EA3B2119E4B400011224 /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433EA3A2119E4B400011224 /* CategoriesCell.swift */; };
 		9433EA3F2119EA6D00011224 /* SubcategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433EA3E2119EA6D00011224 /* SubcategoriesViewController.swift */; };
+		945399AC21247DF900D48F10 /* PaginatedListOfAllCourses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945399AB21247DF900D48F10 /* PaginatedListOfAllCourses.swift */; };
+		945399AE21247E0900D48F10 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945399AD21247E0900D48F10 /* MainCell.swift */; };
+		945399B021247E3E00D48F10 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945399AF21247E3E00D48F10 /* MainViewController.swift */; };
+		945399B321247EBA00D48F10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 945399B121247EBA00D48F10 /* Main.storyboard */; };
+		945399B721247F3500D48F10 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945399B621247F3500D48F10 /* ServerManager.swift */; };
 		948A4EAE211C774000FCCB6A /* CoursesInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A4EAD211C774000FCCB6A /* CoursesInfoViewController.swift */; };
 		948A4EB0211C847400FCCB6A /* CoursesDetailUpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A4EAF211C847400FCCB6A /* CoursesDetailUpCell.swift */; };
 		94CAB4CD21230C9C00E95173 /* CourseBranchesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAB4CC21230C9C00E95173 /* CourseBranchesCell.swift */; };
@@ -49,19 +52,22 @@
 		9433EA0F2119D80300011224 /* Courses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Courses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9433EA122119D80300011224 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9433EA142119D80300011224 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9433EA172119D80300011224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9433EA192119D80500011224 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9433EA1C2119D80500011224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9433EA1E2119D80500011224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9433EA2A2119D9D400011224 /* HTTPRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestManager.swift; sourceTree = "<group>"; };
 		9433EA2C2119D9E800011224 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
-		9433EA2E2119D9F400011224 /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
 		9433EA302119DA4E00011224 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9433EA322119DBA000011224 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		9433EA342119E11700011224 /* SubCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategories.swift; sourceTree = "<group>"; };
 		9433EA362119E46300011224 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		9433EA3A2119E4B400011224 /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
 		9433EA3E2119EA6D00011224 /* SubcategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubcategoriesViewController.swift; sourceTree = "<group>"; };
+		945399AB21247DF900D48F10 /* PaginatedListOfAllCourses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PaginatedListOfAllCourses.swift; path = Courses/Models/PaginatedListOfAllCourses.swift; sourceTree = SOURCE_ROOT; };
+		945399AD21247E0900D48F10 /* MainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		945399AF21247E3E00D48F10 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		945399B221247EBA00D48F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		945399B621247F3500D48F10 /* ServerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
 		948A4EAD211C774000FCCB6A /* CoursesInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesInfoViewController.swift; sourceTree = "<group>"; };
 		948A4EAF211C847400FCCB6A /* CoursesDetailUpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesDetailUpCell.swift; sourceTree = "<group>"; };
 		94CAB4CC21230C9C00E95173 /* CourseBranchesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseBranchesCell.swift; sourceTree = "<group>"; };
@@ -140,7 +146,7 @@
 			children = (
 				9433EA2A2119D9D400011224 /* HTTPRequestManager.swift */,
 				9433EA2C2119D9E800011224 /* HTTPStatusCode.swift */,
-				9433EA2E2119D9F400011224 /* ServerManager.swift */,
+				945399B621247F3500D48F10 /* ServerManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -163,6 +169,7 @@
 				9433EA342119E11700011224 /* SubCategories.swift */,
 				94D51BE9211C64C4003ECE6E /* CourseList.swift */,
 				94EEE978211BD16500447905 /* CourseDetails.swift */,
+				945399AB21247DF900D48F10 /* PaginatedListOfAllCourses.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,6 +182,7 @@
 				9433EA3E2119EA6D00011224 /* SubcategoriesViewController.swift */,
 				94EEE97A211BDDEE00447905 /* CoursesListViewController.swift */,
 				948A4EAD211C774000FCCB6A /* CoursesInfoViewController.swift */,
+				945399AF21247E3E00D48F10 /* MainViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -182,7 +190,7 @@
 		9433EA282119D95A00011224 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				9433EA162119D80300011224 /* Main.storyboard */,
+				945399B121247EBA00D48F10 /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -201,6 +209,7 @@
 				94DF2825211EB1BC0007CC07 /* CourseServicesCell.swift */,
 				94CAB4CC21230C9C00E95173 /* CourseBranchesCell.swift */,
 				94CAB4CE2123115100E95173 /* CourseActionsCell.swift */,
+				945399AD21247E0900D48F10 /* MainCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -274,9 +283,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				945399B321247EBA00D48F10 /* Main.storyboard in Resources */,
 				9433EA1D2119D80500011224 /* LaunchScreen.storyboard in Resources */,
 				9433EA1A2119D80500011224 /* Assets.xcassets in Resources */,
-				9433EA182119D80300011224 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +338,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				94DF2822211EA68E0007CC07 /* CourseTypeDelegate.swift in Sources */,
-				9433EA2F2119D9F400011224 /* ServerManager.swift in Sources */,
 				9433EA332119DBA000011224 /* Categories.swift in Sources */,
 				94DF2820211EA4ED0007CC07 /* CourseInfoType.swift in Sources */,
 				9433EA372119E46300011224 /* CategoriesViewController.swift in Sources */,
@@ -340,9 +348,12 @@
 				94CAB4D1212316B700E95173 /* CoursesListLogoCell.swift in Sources */,
 				948A4EB0211C847400FCCB6A /* CoursesDetailUpCell.swift in Sources */,
 				94CAB4CF2123115100E95173 /* CourseActionsCell.swift in Sources */,
+				945399AC21247DF900D48F10 /* PaginatedListOfAllCourses.swift in Sources */,
 				9433EA152119D80300011224 /* ViewController.swift in Sources */,
+				945399AE21247E0900D48F10 /* MainCell.swift in Sources */,
 				9433EA132119D80300011224 /* AppDelegate.swift in Sources */,
 				94DF2824211EAA790007CC07 /* CourseContactsCell.swift in Sources */,
+				945399B021247E3E00D48F10 /* MainViewController.swift in Sources */,
 				94EEE97B211BDDEE00447905 /* CoursesListViewController.swift in Sources */,
 				9433EA3B2119E4B400011224 /* CategoriesCell.swift in Sources */,
 				942A30FF211B550D00E9CD4A /* SubcategoriesCell.swift in Sources */,
@@ -352,6 +363,7 @@
 				94EEE97D211BE06500447905 /* CoursesTVCell.swift in Sources */,
 				94DF281C211E97BE0007CC07 /* CourseDetailDescriptionCell.swift in Sources */,
 				9433EA2B2119D9D400011224 /* HTTPRequestManager.swift in Sources */,
+				945399B721247F3500D48F10 /* ServerManager.swift in Sources */,
 				9433EA352119E11700011224 /* SubCategories.swift in Sources */,
 				94DF281E211E9EE80007CC07 /* CourseInfoCell.swift in Sources */,
 				94CAB4CD21230C9C00E95173 /* CourseBranchesCell.swift in Sources */,
@@ -362,20 +374,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9433EA162119D80300011224 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9433EA172119D80300011224 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9433EA1B2119D80500011224 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9433EA1C2119D80500011224 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		945399B121247EBA00D48F10 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				945399B221247EBA00D48F10 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

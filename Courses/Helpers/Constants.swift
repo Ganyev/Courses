@@ -20,6 +20,9 @@ struct Constants {
             static func courseDetail(by courseid: Int) -> String {
                 return "courses/\(courseid)"
             }
+            static func coursePaginatedDetail(by courseid: Int) -> String {
+                return "courses/?page=3&page_size=\(courseid)"
+            }
         }
         
         struct ErrorMessage {
