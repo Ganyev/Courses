@@ -44,7 +44,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="maincell" rowHeight="335" id="WJe-Zs-yi6" customClass="MainCell" customModule="Courses" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="maincell" rowHeight="335" id="WJe-Zs-yi6" customClass="MainCell" customModule="Courses" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="335"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WJe-Zs-yi6" id="Cf5-f9-c8y">
@@ -76,7 +76,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAe-FO-ghe">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAe-FO-ghe">
                                                     <rect key="frame" x="15" y="289.5" width="345" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                                     <nil key="textColor"/>
@@ -142,7 +142,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="newscell" rowHeight="116" id="VrQ-L3-HPh" customClass="NewsCell" customModule="Courses" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="newscell" rowHeight="116" id="VrQ-L3-HPh" customClass="NewsCell" customModule="Courses" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="116"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VrQ-L3-HPh" id="loT-ey-rd4">
@@ -293,15 +293,15 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="10"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7a5-8l-eqJ">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="7a5-8l-eqJ">
                                     <size key="itemSize" width="170" height="170"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                    <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoriescell" id="Osf-Cl-SO7" customClass="CategoriesCell" customModule="Courses" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="10" width="170" height="170"/>
+                                        <rect key="frame" x="5" y="5" width="170" height="170"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
@@ -378,15 +378,15 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="10"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CVL-9u-ECW">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="CVL-9u-ECW">
                                     <size key="itemSize" width="170" height="150"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                    <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="subcatcell" id="dgK-ER-DuO" customClass="SubcategoriesCell" customModule="Courses" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="10" width="170" height="150"/>
+                                        <rect key="frame" x="5" y="5" width="170" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="170" height="150"/>
@@ -468,19 +468,27 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Vh-zF-fdZ">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="168.5"/>
                                                 </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f9w-7v-wVn">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
+                                                    <color key="backgroundColor" red="0.17597953680203049" green="0.17597953680203049" blue="0.17597953680203049" alpha="0.72150577910958902" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hY-Qj-V6P">
                                                     <rect key="frame" x="15" y="137" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="f9w-7v-wVn" secondAttribute="trailing" id="3Ln-FZ-V2L"/>
                                                 <constraint firstAttribute="bottom" secondItem="3hY-Qj-V6P" secondAttribute="bottom" constant="10.5" id="52p-mY-JLn"/>
                                                 <constraint firstItem="3hY-Qj-V6P" firstAttribute="leading" secondItem="epO-hR-SI3" secondAttribute="leading" constant="15" id="9vk-8g-aOT"/>
+                                                <constraint firstItem="f9w-7v-wVn" firstAttribute="top" secondItem="epO-hR-SI3" secondAttribute="top" id="A75-u2-cP3"/>
+                                                <constraint firstAttribute="bottom" secondItem="f9w-7v-wVn" secondAttribute="bottom" id="BXH-v9-hLR"/>
                                                 <constraint firstAttribute="trailing" secondItem="6Vh-zF-fdZ" secondAttribute="trailing" id="JUi-ch-amD"/>
                                                 <constraint firstAttribute="bottom" secondItem="6Vh-zF-fdZ" secondAttribute="bottom" id="MSO-dJ-u3o"/>
                                                 <constraint firstItem="6Vh-zF-fdZ" firstAttribute="leading" secondItem="epO-hR-SI3" secondAttribute="leading" id="On4-Wz-avI"/>
+                                                <constraint firstItem="f9w-7v-wVn" firstAttribute="leading" secondItem="epO-hR-SI3" secondAttribute="leading" id="h9a-H6-exq"/>
                                                 <constraint firstItem="6Vh-zF-fdZ" firstAttribute="top" secondItem="epO-hR-SI3" secondAttribute="top" id="x80-NX-HBf"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -489,7 +497,7 @@
                                             <outlet property="nameLabel" destination="3hY-Qj-V6P" id="3oQ-QG-4eM"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="coursecell" rowHeight="137" id="iuW-oD-6un" customClass="CoursesTVCell" customModule="Courses" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="coursecell" rowHeight="137" id="iuW-oD-6un" customClass="CoursesTVCell" customModule="Courses" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="197" width="375" height="137"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iuW-oD-6un" id="Iaj-tG-E5A">
@@ -565,7 +573,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W0B-v6-Pp2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3741.5" y="-828.5"/>
+            <point key="canvasLocation" x="3740" y="-828.93553223388312"/>
         </scene>
         <!--Courses Info View Controller-->
         <scene sceneID="04h-rw-9Li">
@@ -579,7 +587,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="coursescell" rowHeight="298" id="Ocr-jn-wF1" customClass="CoursesDetailUpCell" customModule="Courses" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="coursescell" rowHeight="298" id="Ocr-jn-wF1" customClass="CoursesDetailUpCell" customModule="Courses" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="298"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ocr-jn-wF1" id="M1D-hP-y2D">
@@ -640,7 +648,7 @@
                                             <outlet property="nameLabel" destination="VlY-a0-eNU" id="PVJ-ZB-KBI"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="fivebuttonscell" id="SFB-Qu-ejp" customClass="CourseDetailDescriptionCell" customModule="Courses" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="fivebuttonscell" id="SFB-Qu-ejp" customClass="CourseDetailDescriptionCell" customModule="Courses" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="326" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SFB-Qu-ejp" id="5u5-4g-ns5">
@@ -725,7 +733,7 @@
                                             <outlet property="servicesButton" destination="MnL-Tj-y3w" id="YKa-Ne-TL7"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="courseinfocell" id="SAQ-op-7Ju" customClass="CourseInfoCell" customModule="Courses" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="courseinfocell" id="SAQ-op-7Ju" customClass="CourseInfoCell" customModule="Courses" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="370" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SAQ-op-7Ju" id="9f8-Q4-AY9">
@@ -750,7 +758,7 @@
                                             <outlet property="courseInfoLabel" destination="jfF-Y0-PrJ" id="CrB-UA-T5I"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="coursecontactscell" id="gLO-I2-Vfi" customClass="CourseContactsCell" customModule="Courses" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="coursecontactscell" id="gLO-I2-Vfi" customClass="CourseContactsCell" customModule="Courses" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="414" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gLO-I2-Vfi" id="CKz-8l-g6r">
@@ -775,7 +783,7 @@
                                             <outlet property="contactLabel" destination="R6H-3Y-cGM" id="BkU-ZE-OJ3"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="courseservicecell" rowHeight="103" id="c1i-Og-jm3" customClass="CourseServicesCell" customModule="Courses" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="courseservicecell" rowHeight="103" id="c1i-Og-jm3" customClass="CourseServicesCell" customModule="Courses" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="458" width="375" height="103"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c1i-Og-jm3" id="mwu-t0-pZj">
@@ -820,7 +828,7 @@
                                             <outlet property="priceLable" destination="AEs-tf-ijO" id="JTy-k4-0Uv"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="coursebranchescell" id="wHm-4U-3aD" customClass="CourseBranchesCell" customModule="Courses" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="coursebranchescell" id="wHm-4U-3aD" customClass="CourseBranchesCell" customModule="Courses" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="561" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wHm-4U-3aD" id="qgS-Ns-Ibr">
@@ -855,7 +863,7 @@
                                             <outlet property="imgLabel" destination="6Gn-QD-tga" id="Z4l-Qh-Y7G"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="coursepromocell" rowHeight="96" id="nnH-sI-GzB" customClass="CourseActionsCell" customModule="Courses" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="coursepromocell" rowHeight="96" id="nnH-sI-GzB" customClass="CourseActionsCell" customModule="Courses" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="605" width="375" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nnH-sI-GzB" id="6mU-Tf-Fpi">
@@ -935,6 +943,35 @@
             </objects>
             <point key="canvasLocation" x="4501.6000000000004" y="-827.58620689655174"/>
         </scene>
+        <!--Map View Controller-->
+        <scene sceneID="ybq-rG-fSW">
+            <objects>
+                <viewController storyboardIdentifier="mapvc" id="6qq-9J-LaF" customClass="MapViewController" customModule="Courses" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BIh-Gc-b4y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Sip-i5-Dli">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Sip-i5-Dli" firstAttribute="top" secondItem="DsH-wF-Qsn" secondAttribute="top" id="55q-BI-f59"/>
+                            <constraint firstItem="DsH-wF-Qsn" firstAttribute="bottom" secondItem="Sip-i5-Dli" secondAttribute="bottom" id="BYN-fE-10r"/>
+                            <constraint firstItem="DsH-wF-Qsn" firstAttribute="trailing" secondItem="Sip-i5-Dli" secondAttribute="trailing" id="iI4-fG-au0"/>
+                            <constraint firstItem="Sip-i5-Dli" firstAttribute="leading" secondItem="DsH-wF-Qsn" secondAttribute="leading" id="tmP-Yj-Mc0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DsH-wF-Qsn"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="Sip-i5-Dli" id="9tL-Oz-C0k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NKl-KX-p2a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5249" y="-807"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="noW-Tk-DcD">
             <objects>
@@ -985,15 +1022,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="10"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="81e-zw-TzC">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="81e-zw-TzC">
                                     <size key="itemSize" width="178" height="174"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                    <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="unicell" id="9M9-LC-u1S" customClass="UniListCell" customModule="Courses" customModuleProvider="target">
-                                        <rect key="frame" x="98.5" y="10" width="178" height="174"/>
+                                        <rect key="frame" x="5" y="5" width="178" height="174"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="178" height="174"/>

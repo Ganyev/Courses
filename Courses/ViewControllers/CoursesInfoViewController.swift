@@ -15,6 +15,7 @@ class CoursesInfoViewController: UIViewController, UITableViewDataSource, Course
     
     var contacts: [Contact] = []
     var courseDetails: CourseDetail?
+    
     var course: CourseBase?
     var curentType: CourseInfoType = .info
     override func viewDidLoad() {
@@ -23,6 +24,7 @@ class CoursesInfoViewController: UIViewController, UITableViewDataSource, Course
         infoTableView.estimatedRowHeight = 50
         infoTableView.dataSource = self
         infoTableView.delegate = self
+        //убирает ненужные линии в таблице
         infoTableView.tableFooterView = UIView()
         ServerManager.shared.getCoursesDetail(courseid: course!.id!, completion: setCourseDetail) { (error) in
             print(error)
@@ -116,6 +118,19 @@ class CoursesInfoViewController: UIViewController, UITableViewDataSource, Course
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 1 && indexPath.row == 0 {
+            
+        
+        if curentType == .branche {
+            let st = UIStoryboard(name: "Main", bundle: nil)
+            let vc = st.instantiateViewController(withIdentifier: "mapvc") as! MapViewController
+            vc.mapDetails = courseDetails!.branches[indexPath.row]
+            self.show(vc, sender: self)
+        }
+        }
     }
     
 }

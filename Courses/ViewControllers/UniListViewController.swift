@@ -35,7 +35,7 @@ class UniListViewController: UIViewController, UICollectionViewDataSource, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = CGSize(width: 191, height: 150)
+        let size = CGSize(width: 199, height: 150)
         return size
     }
     

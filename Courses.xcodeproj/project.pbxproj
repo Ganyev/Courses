@@ -35,6 +35,7 @@
 		945399C32124936D00D48F10 /* allUnis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945399C22124936D00D48F10 /* allUnis.swift */; };
 		945399C521258CA800D48F10 /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945399C421258CA800D48F10 /* NewsDetailsViewController.swift */; };
 		945399C721258D9300D48F10 /* NewsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945399C621258D9300D48F10 /* NewsDetails.swift */; };
+		945399C92125B1E700D48F10 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945399C82125B1E700D48F10 /* MapViewController.swift */; };
 		948A4EAE211C774000FCCB6A /* CoursesInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A4EAD211C774000FCCB6A /* CoursesInfoViewController.swift */; };
 		948A4EB0211C847400FCCB6A /* CoursesDetailUpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A4EAF211C847400FCCB6A /* CoursesDetailUpCell.swift */; };
 		94CAB4CD21230C9C00E95173 /* CourseBranchesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAB4CC21230C9C00E95173 /* CourseBranchesCell.swift */; };
@@ -84,6 +85,7 @@
 		945399C22124936D00D48F10 /* allUnis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allUnis.swift; sourceTree = "<group>"; };
 		945399C421258CA800D48F10 /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
 		945399C621258D9300D48F10 /* NewsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetails.swift; sourceTree = "<group>"; };
+		945399C82125B1E700D48F10 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		948A4EAD211C774000FCCB6A /* CoursesInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesInfoViewController.swift; sourceTree = "<group>"; };
 		948A4EAF211C847400FCCB6A /* CoursesDetailUpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesDetailUpCell.swift; sourceTree = "<group>"; };
 		94CAB4CC21230C9C00E95173 /* CourseBranchesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseBranchesCell.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				945399BA212485AB00D48F10 /* NewsViewController.swift */,
 				945399C421258CA800D48F10 /* NewsDetailsViewController.swift */,
 				945399BE2124915B00D48F10 /* UniListViewController.swift */,
+				945399C82125B1E700D48F10 /* MapViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				945399BF2124915B00D48F10 /* UniListViewController.swift in Sources */,
 				94DF2824211EAA790007CC07 /* CourseContactsCell.swift in Sources */,
 				945399B021247E3E00D48F10 /* MainViewController.swift in Sources */,
+				945399C92125B1E700D48F10 /* MapViewController.swift in Sources */,
 				94EEE97B211BDDEE00447905 /* CoursesListViewController.swift in Sources */,
 				9433EA3B2119E4B400011224 /* CategoriesCell.swift in Sources */,
 				942A30FF211B550D00E9CD4A /* SubcategoriesCell.swift in Sources */,

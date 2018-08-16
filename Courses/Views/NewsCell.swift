@@ -17,6 +17,10 @@ class NewsCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     
     func setDataNews(newsData: NewsResult) {
+        
+        mainImage.layer.cornerRadius = 5.0
+        mainImage.clipsToBounds = true
+        
         nameLabel.text = newsData.title
         descLabel.text = newsData.description
         dateLabel.text = "Добавлено: \(newsData.added!)"

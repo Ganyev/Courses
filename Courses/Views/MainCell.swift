@@ -21,6 +21,16 @@ class MainCell: UITableViewCell {
         nameLabel.text = main.title
         descLabel.text = main.description
         heshtagLabel.text = "Категории:"
+        
+        mainImage.layer.cornerRadius = 10.0
+        mainImage.clipsToBounds = true
+        
+        logoImage.layer.borderWidth = 1
+        logoImage.layer.masksToBounds = false
+        logoImage.layer.borderColor = UIColor.black.cgColor
+        logoImage.layer.cornerRadius = logoImage.frame.height/2
+        logoImage.clipsToBounds = true
+        
         guard let logoImagePath = main.logo_image_url else {
             return
         }
