@@ -13,7 +13,7 @@ class NewsDetailsViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var addedLabel: UILabel!
     @IBOutlet weak var newsImage: UIImageView!
-    @IBOutlet weak var newsTextLabel: UIView!
+    @IBOutlet weak var newsTextLabel: UITextView!
     
     //var newsDetailsArray: [NewsDetails] = []
     var news: NewsResult?
@@ -28,7 +28,16 @@ class NewsDetailsViewController: UIViewController {
     func setNewsDetails(news: NewsDetails) {
         //newsDetailsArray = news
         nameLabel.text = news.title
-        addedLabel.text = news.description
+        addedLabel.text = "Добавлено: \(news.added!)"
+        newsTextLabel.text = news.description
+        
+        guard let mainImagePath = news.news_image else {
+            return
+        }
+        guard let url = URL(string: mainImagePath) else {
+            return
+        }
+        newsImage.kf.setImage(with: url)
         
 //        newsTextLabel = UIView(frame: CGRect(x: 100, y: 200, width: 200, height: 200))
 //

@@ -22,6 +22,7 @@ class CoursesInfoViewController: UIViewController, UITableViewDataSource, Course
         infoTableView.rowHeight = UITableViewAutomaticDimension
         infoTableView.estimatedRowHeight = 50
         infoTableView.dataSource = self
+        infoTableView.delegate = self
         infoTableView.tableFooterView = UIView()
         ServerManager.shared.getCoursesDetail(courseid: course!.id!, completion: setCourseDetail) { (error) in
             print(error)

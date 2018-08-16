@@ -16,6 +16,7 @@ class CourseBranchesCell: UITableViewCell {
     
     func setBranches(branch: Branch) {
         branchLabel.text = branch.address
+        
     }
     
     override func awakeFromNib() {

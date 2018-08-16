@@ -115,7 +115,7 @@ class ServerManager: HTTPRequestManager {
     }
     
     func getNewsDetails(newsId: Int, completion: @escaping (NewsDetails) -> (), error: @escaping (String) -> ()) {
-        self.get(endpoint: Constants.Network.EndPoint.news, completion: { (data) in
+        self.get(endpoint: Constants.Network.EndPoint.newsDetail(by: newsId), completion: { (data) in
             //TODO
             do {
                 guard let  data = data else { return }

@@ -244,24 +244,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="08h-Di-Y2D">
-                                <rect key="frame" x="15" y="280" width="345" height="387"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Cb6-h9-kq8">
+                                <rect key="frame" x="15" y="280" width="345" height="377"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="F9M-NQ-1zq" firstAttribute="trailing" secondItem="08h-Di-Y2D" secondAttribute="trailing" constant="15" id="1nw-IG-L2x"/>
-                            <constraint firstItem="08h-Di-Y2D" firstAttribute="leading" secondItem="F9M-NQ-1zq" secondAttribute="leading" constant="15" id="5z6-gV-5be"/>
                             <constraint firstItem="zgw-bO-gz1" firstAttribute="leading" secondItem="F9M-NQ-1zq" secondAttribute="leading" constant="15" id="6qj-dP-uTe"/>
                             <constraint firstItem="F9M-NQ-1zq" firstAttribute="trailing" secondItem="zRO-Z5-mkw" secondAttribute="trailing" constant="15" id="7VO-Ne-bj1"/>
                             <constraint firstItem="zRO-Z5-mkw" firstAttribute="top" secondItem="HuA-jH-PXL" secondAttribute="bottom" constant="10" id="JLC-HO-W00"/>
                             <constraint firstItem="zgw-bO-gz1" firstAttribute="top" secondItem="F9M-NQ-1zq" secondAttribute="top" id="KWU-2M-ao6"/>
-                            <constraint firstItem="F9M-NQ-1zq" firstAttribute="bottom" secondItem="08h-Di-Y2D" secondAttribute="bottom" id="MY7-HN-SBI"/>
                             <constraint firstItem="F9M-NQ-1zq" firstAttribute="trailing" secondItem="zgw-bO-gz1" secondAttribute="trailing" constant="15" id="Os3-UC-1ZS"/>
+                            <constraint firstItem="Cb6-h9-kq8" firstAttribute="top" secondItem="zRO-Z5-mkw" secondAttribute="bottom" constant="10" id="RHC-5B-znk"/>
+                            <constraint firstItem="Cb6-h9-kq8" firstAttribute="leading" secondItem="F9M-NQ-1zq" secondAttribute="leading" constant="15" id="b7c-fI-xCQ"/>
                             <constraint firstItem="HuA-jH-PXL" firstAttribute="leading" secondItem="F9M-NQ-1zq" secondAttribute="leading" id="fpP-3f-bYF"/>
-                            <constraint firstItem="08h-Di-Y2D" firstAttribute="top" secondItem="zRO-Z5-mkw" secondAttribute="bottom" constant="10" id="mMm-bN-kJB"/>
+                            <constraint firstItem="F9M-NQ-1zq" firstAttribute="bottom" secondItem="Cb6-h9-kq8" secondAttribute="bottom" constant="10" id="hTv-Fu-awJ"/>
                             <constraint firstItem="F9M-NQ-1zq" firstAttribute="trailing" secondItem="HuA-jH-PXL" secondAttribute="trailing" id="mot-In-dNj"/>
+                            <constraint firstItem="F9M-NQ-1zq" firstAttribute="trailing" secondItem="Cb6-h9-kq8" secondAttribute="trailing" constant="15" id="oeV-CE-LDg"/>
                             <constraint firstItem="HuA-jH-PXL" firstAttribute="top" secondItem="zgw-bO-gz1" secondAttribute="bottom" constant="10" id="pjq-3W-s7R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="F9M-NQ-1zq"/>
@@ -270,7 +274,7 @@
                         <outlet property="addedLabel" destination="zRO-Z5-mkw" id="0Gj-lV-RhL"/>
                         <outlet property="nameLabel" destination="zgw-bO-gz1" id="oGl-S1-eyO"/>
                         <outlet property="newsImage" destination="HuA-jH-PXL" id="1ZJ-9b-RvY"/>
-                        <outlet property="newsTextLabel" destination="08h-Di-Y2D" id="POQ-Bb-Pb4"/>
+                        <outlet property="newsTextLabel" destination="Cb6-h9-kq8" id="zQ4-gZ-K4p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R1e-W3-Mjk" userLabel="First Responder" sceneMemberID="firstResponder"/>
