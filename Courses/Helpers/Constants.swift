@@ -20,12 +20,14 @@ struct Constants {
             static func courseDetail(by courseid: Int) -> String {
                 return "courses/\(courseid)"
             }
-            static func coursePaginatedDetail(by courseid: Int) -> String {
-                return "courses/?page=3&page_size=\(courseid)"
+            static func coursePaginatedDetail(by pageNumber: Int) -> String {
+                return "courses/?page=\(pageNumber)&page_size=5"
             }
             static let news = "news"
             static let universities = "universities/categories/"
-            
+            static func newsDetail(by newsId: Int) -> String {
+                return "news/\(newsId)"
+            }
             
         }
         

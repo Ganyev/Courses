@@ -8,6 +8,10 @@
 
 import Foundation
 
+class Courses: Decodable {
+    var results: [CourseBase] = []
+}
+
 class CourseBase: Decodable {
     var id: Int?
     var title: String?

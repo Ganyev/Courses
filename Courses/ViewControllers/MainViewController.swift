@@ -11,22 +11,27 @@ import UIKit
 class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
-    var dataArray: [ResultList] = []
-    var coursePaginatedArray: [CourseBase] = []
+    var dataArray: [CourseBase] = []
+    var page = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
         tableView.rowHeight = UITableViewAutomaticDimension
-        ServerManager.shared.getPaginatedListOfCourses(courseid: 5, completion: setPaginatedData) { (error) in
+        loadCourses()
+    }
+    
+    func loadCourses() {
+    ServerManager.shared.getPaginatedListOfCourses(pageNumber: page, completion: setPaginatedData) { (error) in
             print(error)
         }
     }
     
-    func setPaginatedData(data: [ResultList]) {
-        dataArray = data
+    func setPaginatedData(data: [CourseBase]) {
+        dataArray.append(contentsOf: data)
         self.tableView.reloadData()
+         page = page + 1
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -40,6 +45,13 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "maincell", for: indexPath) as! MainCell
         cell.setMainData(main: dataArray[indexPath.row])
+        
+        let lastItem = dataArray.count - 1
+        if indexPath.row == lastItem {
+            print("LOAD DATA PGINATED")
+            loadCourses()
+        }
+        
         return cell
     }
     
@@ -47,8 +59,9 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "coursedetailvc") as! CoursesInfoViewController
         
-        vc.course = coursePaginatedArray[indexPath.row]
+        vc.course = dataArray[indexPath.row]
         self.show(vc, sender: self)
     }
+    
 
 }

@@ -33,6 +33,8 @@
 		945399BF2124915B00D48F10 /* UniListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945399BE2124915B00D48F10 /* UniListViewController.swift */; };
 		945399C12124917F00D48F10 /* UniListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945399C02124917F00D48F10 /* UniListCell.swift */; };
 		945399C32124936D00D48F10 /* allUnis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945399C22124936D00D48F10 /* allUnis.swift */; };
+		945399C521258CA800D48F10 /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945399C421258CA800D48F10 /* NewsDetailsViewController.swift */; };
+		945399C721258D9300D48F10 /* NewsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945399C621258D9300D48F10 /* NewsDetails.swift */; };
 		948A4EAE211C774000FCCB6A /* CoursesInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A4EAD211C774000FCCB6A /* CoursesInfoViewController.swift */; };
 		948A4EB0211C847400FCCB6A /* CoursesDetailUpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A4EAF211C847400FCCB6A /* CoursesDetailUpCell.swift */; };
 		94CAB4CD21230C9C00E95173 /* CourseBranchesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAB4CC21230C9C00E95173 /* CourseBranchesCell.swift */; };
@@ -80,6 +82,8 @@
 		945399BE2124915B00D48F10 /* UniListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniListViewController.swift; sourceTree = "<group>"; };
 		945399C02124917F00D48F10 /* UniListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniListCell.swift; sourceTree = "<group>"; };
 		945399C22124936D00D48F10 /* allUnis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allUnis.swift; sourceTree = "<group>"; };
+		945399C421258CA800D48F10 /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
+		945399C621258D9300D48F10 /* NewsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetails.swift; sourceTree = "<group>"; };
 		948A4EAD211C774000FCCB6A /* CoursesInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesInfoViewController.swift; sourceTree = "<group>"; };
 		948A4EAF211C847400FCCB6A /* CoursesDetailUpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesDetailUpCell.swift; sourceTree = "<group>"; };
 		94CAB4CC21230C9C00E95173 /* CourseBranchesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseBranchesCell.swift; sourceTree = "<group>"; };
@@ -184,6 +188,7 @@
 				945399AB21247DF900D48F10 /* PaginatedListOfAllCourses.swift */,
 				945399B8212483F700D48F10 /* News.swift */,
 				945399C22124936D00D48F10 /* allUnis.swift */,
+				945399C621258D9300D48F10 /* NewsDetails.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 				948A4EAD211C774000FCCB6A /* CoursesInfoViewController.swift */,
 				945399AF21247E3E00D48F10 /* MainViewController.swift */,
 				945399BA212485AB00D48F10 /* NewsViewController.swift */,
+				945399C421258CA800D48F10 /* NewsDetailsViewController.swift */,
 				945399BE2124915B00D48F10 /* UniListViewController.swift */,
 			);
 			path = ViewControllers;
@@ -355,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				945399C521258CA800D48F10 /* NewsDetailsViewController.swift in Sources */,
 				94DF2822211EA68E0007CC07 /* CourseTypeDelegate.swift in Sources */,
 				9433EA332119DBA000011224 /* Categories.swift in Sources */,
 				945399B9212483F700D48F10 /* News.swift in Sources */,
@@ -368,6 +375,7 @@
 				948A4EB0211C847400FCCB6A /* CoursesDetailUpCell.swift in Sources */,
 				94CAB4CF2123115100E95173 /* CourseActionsCell.swift in Sources */,
 				945399AC21247DF900D48F10 /* PaginatedListOfAllCourses.swift in Sources */,
+				945399C721258D9300D48F10 /* NewsDetails.swift in Sources */,
 				9433EA152119D80300011224 /* ViewController.swift in Sources */,
 				945399AE21247E0900D48F10 /* MainCell.swift in Sources */,
 				945399BB212485AB00D48F10 /* NewsViewController.swift in Sources */,

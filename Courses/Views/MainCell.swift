@@ -17,7 +17,7 @@ class MainCell: UITableViewCell {
     @IBOutlet weak var mainImage: UIImageView!
     @IBOutlet weak var heshtagLabel: UILabel!
     
-    func setMainData(main: ResultList) {
+    func setMainData(main: CourseBase) {
         nameLabel.text = main.title
         descLabel.text = main.description
         heshtagLabel.text = "Категории:"

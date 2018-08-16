@@ -218,6 +218,65 @@
             </objects>
             <point key="canvasLocation" x="2124" y="664.31784107946032"/>
         </scene>
+        <!--News Details View Controller-->
+        <scene sceneID="9fy-J5-fEU">
+            <objects>
+                <viewController storyboardIdentifier="newsdetailvc" id="gFP-2f-4rC" customClass="NewsDetailsViewController" customModule="Courses" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cc8-0h-0KS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgw-bO-gz1">
+                                <rect key="frame" x="15" y="20" width="345" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HuA-jH-PXL">
+                                <rect key="frame" x="0.0" y="54" width="375" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="ld0-Bn-qYs"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRO-Z5-mkw">
+                                <rect key="frame" x="318" y="249" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="08h-Di-Y2D">
+                                <rect key="frame" x="15" y="280" width="345" height="387"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="F9M-NQ-1zq" firstAttribute="trailing" secondItem="08h-Di-Y2D" secondAttribute="trailing" constant="15" id="1nw-IG-L2x"/>
+                            <constraint firstItem="08h-Di-Y2D" firstAttribute="leading" secondItem="F9M-NQ-1zq" secondAttribute="leading" constant="15" id="5z6-gV-5be"/>
+                            <constraint firstItem="zgw-bO-gz1" firstAttribute="leading" secondItem="F9M-NQ-1zq" secondAttribute="leading" constant="15" id="6qj-dP-uTe"/>
+                            <constraint firstItem="F9M-NQ-1zq" firstAttribute="trailing" secondItem="zRO-Z5-mkw" secondAttribute="trailing" constant="15" id="7VO-Ne-bj1"/>
+                            <constraint firstItem="zRO-Z5-mkw" firstAttribute="top" secondItem="HuA-jH-PXL" secondAttribute="bottom" constant="10" id="JLC-HO-W00"/>
+                            <constraint firstItem="zgw-bO-gz1" firstAttribute="top" secondItem="F9M-NQ-1zq" secondAttribute="top" id="KWU-2M-ao6"/>
+                            <constraint firstItem="F9M-NQ-1zq" firstAttribute="bottom" secondItem="08h-Di-Y2D" secondAttribute="bottom" id="MY7-HN-SBI"/>
+                            <constraint firstItem="F9M-NQ-1zq" firstAttribute="trailing" secondItem="zgw-bO-gz1" secondAttribute="trailing" constant="15" id="Os3-UC-1ZS"/>
+                            <constraint firstItem="HuA-jH-PXL" firstAttribute="leading" secondItem="F9M-NQ-1zq" secondAttribute="leading" id="fpP-3f-bYF"/>
+                            <constraint firstItem="08h-Di-Y2D" firstAttribute="top" secondItem="zRO-Z5-mkw" secondAttribute="bottom" constant="10" id="mMm-bN-kJB"/>
+                            <constraint firstItem="F9M-NQ-1zq" firstAttribute="trailing" secondItem="HuA-jH-PXL" secondAttribute="trailing" id="mot-In-dNj"/>
+                            <constraint firstItem="HuA-jH-PXL" firstAttribute="top" secondItem="zgw-bO-gz1" secondAttribute="bottom" constant="10" id="pjq-3W-s7R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="F9M-NQ-1zq"/>
+                    </view>
+                    <connections>
+                        <outlet property="addedLabel" destination="zRO-Z5-mkw" id="0Gj-lV-RhL"/>
+                        <outlet property="nameLabel" destination="zgw-bO-gz1" id="oGl-S1-eyO"/>
+                        <outlet property="newsImage" destination="HuA-jH-PXL" id="1ZJ-9b-RvY"/>
+                        <outlet property="newsTextLabel" destination="08h-Di-Y2D" id="POQ-Bb-Pb4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R1e-W3-Mjk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2932" y="663.41829085457277"/>
+        </scene>
         <!--Категории-->
         <scene sceneID="bQx-kU-37i">
             <objects>

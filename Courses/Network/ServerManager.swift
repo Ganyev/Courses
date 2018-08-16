@@ -80,12 +80,12 @@ class ServerManager: HTTPRequestManager {
         }
     }
     
-    func getPaginatedListOfCourses(courseid: Int, completion: @escaping ([ResultList]) -> (), error: @escaping (String) -> ()) {
-        self.get(endpoint: Constants.Network.EndPoint.coursePaginatedDetail(by: courseid), completion: { (data) in
+    func getPaginatedListOfCourses(pageNumber: Int, completion: @escaping ([CourseBase]) -> (), error: @escaping (String) -> ()) {
+        self.get(endpoint: Constants.Network.EndPoint.coursePaginatedDetail(by: pageNumber), completion: { (data) in
             //TODO
             do {
                 guard let  data = data else { return }
-                let result = try JSONDecoder().decode(Result.self, from: data)
+                let result = try JSONDecoder().decode(Courses.self, from: data)
                 completion(result.results)
             }
             catch let errorMessage {
@@ -104,6 +104,23 @@ class ServerManager: HTTPRequestManager {
                 guard let  data = data else { return }
                 let result = try JSONDecoder().decode(News.self, from: data)
                 completion(result.results)
+            }
+            catch let errorMessage {
+                error(errorMessage.localizedDescription)
+            }
+            
+        }) { (errorMessage) in
+            error(errorMessage)
+        }
+    }
+    
+    func getNewsDetails(newsId: Int, completion: @escaping (NewsDetails) -> (), error: @escaping (String) -> ()) {
+        self.get(endpoint: Constants.Network.EndPoint.news, completion: { (data) in
+            //TODO
+            do {
+                guard let  data = data else { return }
+                let result = try JSONDecoder().decode(NewsDetails.self, from: data)
+                completion(result)
             }
             catch let errorMessage {
                 error(errorMessage.localizedDescription)
