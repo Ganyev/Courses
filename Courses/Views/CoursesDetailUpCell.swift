@@ -17,9 +17,9 @@ class CoursesDetailUpCell: UITableViewCell {
     func setDetails(detail: CourseDetail) {
         nameLabel.text = detail.title
         
-        logoImage.layer.borderWidth = 1
+        logoImage.layer.borderWidth = 0.5
         logoImage.layer.masksToBounds = false
-        logoImage.layer.borderColor = UIColor.black.cgColor
+        logoImage.layer.borderColor = UIColor.lightGray.cgColor
         logoImage.layer.cornerRadius = logoImage.frame.height/2
         logoImage.clipsToBounds = true
         

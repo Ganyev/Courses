@@ -15,7 +15,7 @@ class CoursesInfoViewController: UIViewController, UITableViewDataSource, Course
     
     var contacts: [Contact] = []
     var courseDetails: CourseDetail?
-    
+    var contactDidSelect: Contact?
     var course: CourseBase?
     var curentType: CourseInfoType = .info
     override func viewDidLoad() {
@@ -95,6 +95,7 @@ class CoursesInfoViewController: UIViewController, UITableViewDataSource, Course
         if curentType == .contact {
             let cell = infoTableView.dequeueReusableCell(withIdentifier: "coursecontactscell", for: indexPath) as! CourseContactsCell
             cell.setContacts(contact:courseDetails!.contacts[indexPath.row])
+            cell.textContact = courseDetails?.contacts[indexPath.row]
             return cell
         }
         if curentType == .service {
@@ -123,14 +124,18 @@ class CoursesInfoViewController: UIViewController, UITableViewDataSource, Course
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 1 && indexPath.row == 0 {
             
-        
         if curentType == .branche {
             let st = UIStoryboard(name: "Main", bundle: nil)
             let vc = st.instantiateViewController(withIdentifier: "mapvc") as! MapViewController
             vc.mapDetails = courseDetails!.branches[indexPath.row]
             self.show(vc, sender: self)
-        }
+            }
+
         }
     }
     
 }
+    
+
+    
+
