@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zts-Bw-Qkx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TnO-Jx-niq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,16 +12,40 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="mVL-ep-5JC">
             <objects>
-                <viewController id="TnO-Jx-niq" sceneMemberID="viewController">
+                <viewController id="TnO-Jx-niq" customClass="LoginViewController" customModule="Courses" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wHl-df-zCu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFc-7u-sid">
+                                <rect key="frame" x="100" y="387" width="175" height="30"/>
+                                <color key="backgroundColor" red="0.9940686821937561" green="0.42253208160400391" blue="0.00071979535277932882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fNy-HP-GDt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Zts-Bw-Qkx" kind="show" id="wrT-UC-LNe"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4jj-dC-mTu" firstAttribute="trailing" secondItem="DFc-7u-sid" secondAttribute="trailing" constant="100" id="61g-pm-Qge"/>
+                            <constraint firstItem="DFc-7u-sid" firstAttribute="leading" secondItem="4jj-dC-mTu" secondAttribute="leading" constant="100" id="rtR-CX-3Gy"/>
+                            <constraint firstItem="4jj-dC-mTu" firstAttribute="bottom" secondItem="DFc-7u-sid" secondAttribute="bottom" constant="250" id="yaB-ii-Ul5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4jj-dC-mTu"/>
                     </view>
+                    <connections>
+                        <outlet property="enterButton" destination="DFc-7u-sid" id="H8Y-iv-ch5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TW1-Le-rWy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

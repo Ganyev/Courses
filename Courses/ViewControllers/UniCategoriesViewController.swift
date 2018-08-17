@@ -59,11 +59,5 @@ class UniCategoriesViewController: UIViewController, UITableViewDataSource, UITa
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let st = UIStoryboard.init(name: "Main", bundle: nil)
-        let vc = st.instantiateViewController(withIdentifier: "coursedetailvc") as! CoursesInfoViewController
-        vc.course = uniCatArray[indexPath.row]
-        self.show(vc, sender: self)
-    }
 
 }
