@@ -680,7 +680,7 @@
                                                         <constraint firstAttribute="height" constant="25" id="bod-vr-0T9"/>
                                                         <constraint firstAttribute="width" constant="25" id="izK-qX-8Ab"/>
                                                     </constraints>
-                                                    <state key="normal" title="Button" image="file"/>
+                                                    <state key="normal" image="info"/>
                                                     <connections>
                                                         <action selector="buttonTappedWithButton:" destination="SFB-Qu-ejp" eventType="touchUpInside" id="Rza-mJ-5wR"/>
                                                     </connections>
@@ -702,7 +702,7 @@
                                                         <constraint firstAttribute="width" constant="25" id="uSA-mV-kZS"/>
                                                         <constraint firstAttribute="height" constant="25" id="zN0-lv-SWe"/>
                                                     </constraints>
-                                                    <state key="normal" title="Button" image="success"/>
+                                                    <state key="normal" title="Button" image="warning"/>
                                                     <connections>
                                                         <action selector="buttonTappedWithButton:" destination="SFB-Qu-ejp" eventType="touchUpInside" id="S6U-MK-tAQ"/>
                                                     </connections>
@@ -713,7 +713,7 @@
                                                         <constraint firstAttribute="height" constant="25" id="Wli-Vu-P0f"/>
                                                         <constraint firstAttribute="width" constant="25" id="ZkZ-vx-Uac"/>
                                                     </constraints>
-                                                    <state key="normal" title="Button" image="share"/>
+                                                    <state key="normal" title="Button" image="notebook"/>
                                                     <connections>
                                                         <action selector="buttonTappedWithButton:" destination="SFB-Qu-ejp" eventType="touchUpInside" id="NnY-L1-RqT"/>
                                                     </connections>
@@ -724,7 +724,7 @@
                                                         <constraint firstAttribute="height" constant="25" id="HaI-rO-xsD"/>
                                                         <constraint firstAttribute="width" constant="25" id="jRS-w3-Ucu"/>
                                                     </constraints>
-                                                    <state key="normal" title="Button" image="paper-plane"/>
+                                                    <state key="normal" title="Button" image="megaphone"/>
                                                     <connections>
                                                         <action selector="buttonTappedWithButton:" destination="SFB-Qu-ejp" eventType="touchUpInside" id="pD2-xC-e4R"/>
                                                     </connections>
@@ -1163,13 +1163,13 @@
     <resources>
         <image name="book" width="30" height="30"/>
         <image name="copy" width="30" height="30"/>
-        <image name="file" width="256" height="256"/>
         <image name="graduation_cap" width="30" height="30"/>
         <image name="home" width="30" height="30"/>
-        <image name="paper-plane" width="256" height="256"/>
+        <image name="info" width="256" height="256"/>
+        <image name="megaphone" width="256" height="256"/>
+        <image name="notebook" width="256" height="256"/>
         <image name="pin" width="256" height="256"/>
-        <image name="placeholder" width="512" height="512"/>
-        <image name="share" width="512" height="512"/>
-        <image name="success" width="256" height="256"/>
+        <image name="placeholder" width="256" height="256"/>
+        <image name="warning" width="256" height="256"/>
     </resources>
 </document>

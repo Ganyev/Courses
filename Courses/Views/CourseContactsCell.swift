@@ -16,7 +16,7 @@ class CourseContactsCell: UITableViewCell {
     
     func setContacts(contact: Contact) {
         contactButton.setTitle(contact.contact, for: .normal)
-        contactButton.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left
+        contactButton.contentHorizontalAlignment = .left
         if contact.type == "PHONE" {
             imgView.image = #imageLiteral(resourceName: "call")
         }
