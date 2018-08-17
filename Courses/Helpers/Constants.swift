@@ -28,6 +28,9 @@ struct Constants {
             static func newsDetail(by newsId: Int) -> String {
                 return "news/\(newsId)"
             }
+            static func uniCategories(by uniId: Int) -> String {
+                return "universities/categories/\(uniId)"
+            }
             
         }
         

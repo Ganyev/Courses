@@ -45,5 +45,12 @@ class UniListViewController: UIViewController, UICollectionViewDataSource, UICol
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let st = UIStoryboard.init(name: "Main", bundle: nil)
+        let vc = st.instantiateViewController(withIdentifier: "unicatvc") as! UniCategoriesViewController
+        vc.university = unisArray[indexPath.row]
+        self.show(vc, sender: self)
+    }
+    
 
 }
