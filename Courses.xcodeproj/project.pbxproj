@@ -46,6 +46,7 @@
 		94CAB4CF2123115100E95173 /* CourseActionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAB4CE2123115100E95173 /* CourseActionsCell.swift */; };
 		94CAB4D1212316B700E95173 /* CoursesListLogoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAB4D0212316B700E95173 /* CoursesListLogoCell.swift */; };
 		94D51BEA211C64C4003ECE6E /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D51BE9211C64C4003ECE6E /* CourseList.swift */; };
+		94DB27752127313A00738473 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DB27742127313A00738473 /* LoginViewController.swift */; };
 		94DF281C211E97BE0007CC07 /* CourseDetailDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF281B211E97BE0007CC07 /* CourseDetailDescriptionCell.swift */; };
 		94DF281E211E9EE80007CC07 /* CourseInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF281D211E9EE80007CC07 /* CourseInfoCell.swift */; };
 		94DF2820211EA4ED0007CC07 /* CourseInfoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF281F211EA4ED0007CC07 /* CourseInfoType.swift */; };
@@ -100,6 +101,7 @@
 		94CAB4CE2123115100E95173 /* CourseActionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseActionsCell.swift; sourceTree = "<group>"; };
 		94CAB4D0212316B700E95173 /* CoursesListLogoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesListLogoCell.swift; sourceTree = "<group>"; };
 		94D51BE9211C64C4003ECE6E /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
+		94DB27742127313A00738473 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		94DF281B211E97BE0007CC07 /* CourseDetailDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailDescriptionCell.swift; sourceTree = "<group>"; };
 		94DF281D211E9EE80007CC07 /* CourseInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfoCell.swift; sourceTree = "<group>"; };
 		94DF281F211EA4ED0007CC07 /* CourseInfoType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfoType.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 		9433EA272119D94800011224 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				94DB27742127313A00738473 /* LoginViewController.swift */,
 				9433EA142119D80300011224 /* ViewController.swift */,
 				9433EA362119E46300011224 /* CategoriesViewController.swift */,
 				9433EA3E2119EA6D00011224 /* SubcategoriesViewController.swift */,
@@ -339,11 +342,21 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Courses/Pods-Courses-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,6 +407,7 @@
 				9433EA152119D80300011224 /* ViewController.swift in Sources */,
 				945399AE21247E0900D48F10 /* MainCell.swift in Sources */,
 				945399BB212485AB00D48F10 /* NewsViewController.swift in Sources */,
+				94DB27752127313A00738473 /* LoginViewController.swift in Sources */,
 				945399C12124917F00D48F10 /* UniListCell.swift in Sources */,
 				9433EA132119D80300011224 /* AppDelegate.swift in Sources */,
 				945399BF2124915B00D48F10 /* UniListViewController.swift in Sources */,

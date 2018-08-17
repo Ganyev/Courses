@@ -12,8 +12,6 @@ import Kingfisher
 class CourseInfoCell: UITableViewCell {
 
     @IBOutlet weak var courseInfoLabel: UILabel!
-    
-    
    
     override func awakeFromNib() {
         super.awakeFromNib()

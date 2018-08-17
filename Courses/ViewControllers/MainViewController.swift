@@ -48,7 +48,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         let lastItem = dataArray.count - 1
         if indexPath.row == lastItem {
-            print("LOAD DATA PGINATED")
+            //print("LOAD DATA PGINATED")
             loadCourses()
         }
         

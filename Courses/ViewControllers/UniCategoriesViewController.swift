@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UniCategoriesViewController: UIViewController, UITableViewDataSource {
+class UniCategoriesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var uniCatArray: [UniCategories] = []
     var university: allUnis?
@@ -18,6 +18,7 @@ class UniCategoriesViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.rowHeight = UITableViewAutomaticDimension
         ServerManager.shared.getUniCategories(uniId: university!.id!, completion: setUniCategories) { (error) in
             print(error)
@@ -58,12 +59,11 @@ class UniCategoriesViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.section == 0 {
-            return 250
-        }
-        return UITableViewAutomaticDimension
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let st = UIStoryboard.init(name: "Main", bundle: nil)
+        let vc = st.instantiateViewController(withIdentifier: "coursedetailvc") as! CoursesInfoViewController
+        vc.course = uniCatArray[indexPath.row]
+        self.show(vc, sender: self)
     }
-    
 
 }

@@ -8,5 +8,7 @@ target 'Courses' do
   # Pods for Courses
   pod 'Alamofire', '~> 4.7'
   pod 'Kingfisher'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
 
 end
